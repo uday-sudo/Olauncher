@@ -114,4 +114,5 @@
     <string name="adapter_show">Показать</string>
     <string name="adapter_hide">Скрыть</string>
     <string name="are_you_using_your_phone_or_is_your_phone_using_you">Вы используете свой телефон, или ваш телефон использует вас?</string>
+    <string name="icons_on_home_screen">Значки на главном экране</string>
 </resources>

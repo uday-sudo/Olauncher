@@ -31,8 +31,8 @@
             style="@style/TextDefault"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
-            android:format12Hour="h:mm"
+            android:fontFamily="@font/hindi_siliguri_bold"
+            android:format12Hour="hh:mm"
             android:textSize="@dimen/time_size"
             tools:text="02:34" />
 
@@ -45,10 +45,12 @@
             android:format24Hour="EEE, dd MMM"
             android:paddingHorizontal="3dp"
             android:textSize="@dimen/date_size"
+            android:fontFamily="@font/hindi_siliguri_bold"
             tools:text="Thu, 30 Dec" />
     </LinearLayout>
 
     <!-- Home apps-->
+
     <LinearLayout
         android:id="@+id/homeAppsLayout"
         android:layout_width="match_parent"
@@ -148,6 +150,110 @@
             tools:visibility="visible" />
 
     </LinearLayout>
+
+    <!-- Icon for apps-->
+
+    <LinearLayout
+        android:id="@+id/homeIconsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingHorizontal="40dp"
+        android:paddingTop="112dp"
+        android:paddingBottom="48dp">
+
+        <TextView
+            android:id="@+id/IconApp1"
+            style="@style/TextLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/app"
+            android:paddingVertical="@dimen/home_app_padding_vertical"
+            android:tag="@string/tag_1"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/IconApp2"
+            style="@style/TextLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/app"
+            android:paddingVertical="@dimen/home_app_padding_vertical"
+            android:tag="@string/tag_1"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/IconApp3"
+            style="@style/TextLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/app"
+            android:paddingVertical="@dimen/home_app_padding_vertical"
+            android:tag="@string/tag_1"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/IconApp4"
+            style="@style/TextLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/app"
+            android:paddingVertical="@dimen/home_app_padding_vertical"
+            android:tag="@string/tag_1"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/IconApp5"
+            style="@style/TextLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/app"
+            android:paddingVertical="@dimen/home_app_padding_vertical"
+            android:tag="@string/tag_1"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/IconApp6"
+            style="@style/TextLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/app"
+            android:paddingVertical="@dimen/home_app_padding_vertical"
+            android:tag="@string/tag_1"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/IconApp7"
+            style="@style/TextLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/app"
+            android:paddingVertical="@dimen/home_app_padding_vertical"
+            android:tag="@string/tag_1"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/IconApp8"
+            style="@style/TextLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/app"
+            android:paddingVertical="@dimen/home_app_padding_vertical"
+            android:tag="@string/tag_1"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/firstRunTips"

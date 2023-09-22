@@ -33,4 +33,9 @@ P.S. Feel free to mention your favourite coffee brand. I'll try it if I can.
 
 # Todo
 
-- [ ] Make the Clock better
+- [ ] Wall of widgets - An entire page dedicated to your favorite widgets, accessible via a simple swipe right gesture. Additionally, a weather widget is available on the home screen.
+- [ ] Interrupt - We gently interrupt you whenever you open a time-wasting app. It can greatly help you in reducing your screen time.
+- [ ] Icons on home screen
+- [ ] Update links in app
+
+Changing

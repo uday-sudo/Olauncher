@@ -224,6 +224,146 @@
 
                 </FrameLayout>
 
+                <!-- How Many Icons -->
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:animateLayoutChanges="true"
+                    android:clipChildren="false"
+                    android:clipToPadding="false">
+
+                    <TextView
+                        style="@style/TextSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:paddingVertical="8dp"
+                        android:text="@string/icons_on_home_screen"
+                        android:textColor="?attr/primaryColor" />
+
+                    <TextView
+                        android:id="@+id/homeIconsNum"
+                        style="@style/TextSmallBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginEnd="4dp"
+                        android:paddingVertical="8dp"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="8dp"
+                        tools:text="@string/_8" />
+
+                    <!-- Home apps numbers layout-->
+                    <LinearLayout
+                        android:id="@+id/iconsNumSelectLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true"
+                        android:background="@drawable/rounded_primary_gradient"
+                        android:elevation="8dp"
+                        android:orientation="horizontal"
+                        android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+                        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+                        android:visibility="gone"
+                        tools:ignore="UnusedAttribute">
+
+                        <TextView
+                            android:id="@+id/maxIcons0"
+                            style="@style/TextSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingVertical="8dp"
+                            android:text="@string/_0" />
+
+                        <TextView
+                            android:id="@+id/maxIcons1"
+                            style="@style/TextSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingVertical="8dp"
+                            android:text="@string/_1" />
+
+                        <TextView
+                            android:id="@+id/maxIcons2"
+                            style="@style/TextSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingVertical="8dp"
+                            android:text="@string/_2" />
+
+                        <TextView
+                            android:id="@+id/maxIcons3"
+                            style="@style/TextSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingVertical="8dp"
+                            android:text="@string/_3" />
+
+                        <TextView
+                            android:id="@+id/maxIcons4"
+                            style="@style/TextSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingVertical="8dp"
+                            android:text="@string/_4" />
+
+                        <TextView
+                            android:id="@+id/maxIcons5"
+                            style="@style/TextSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingVertical="8dp"
+                            android:text="@string/_5" />
+
+                        <TextView
+                            android:id="@+id/maxIcons6"
+                            style="@style/TextSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingVertical="8dp"
+                            android:text="@string/_6" />
+
+                        <TextView
+                            android:id="@+id/maxIcons7"
+                            style="@style/TextSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingVertical="8dp"
+                            android:text="@string/_7" />
+
+                        <TextView
+                            android:id="@+id/maxIcons8"
+                            style="@style/TextSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingVertical="8dp"
+                            android:text="@string/_8" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -456,7 +596,7 @@
                             android:paddingVertical="6dp"
                             android:text="@string/left" />
 
-                        <TextView
+                        <!--TextView
                             android:id="@+id/alignmentCenter"
                             style="@style/TextSmallBold"
                             android:layout_width="wrap_content"
@@ -465,7 +605,7 @@
                             android:layout_marginEnd="24dp"
                             android:gravity="center"
                             android:paddingVertical="6dp"
-                            android:text="@string/center" />
+                            android:text="@string/center" /-->
 
                         <TextView
                             android:id="@+id/alignmentRight"

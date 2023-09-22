@@ -18,6 +18,7 @@
             android:id="@+id/search"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_bg"
             android:layout_weight="1"
             android:gravity="end"
             android:imeOptions="actionSearch"
@@ -27,8 +28,8 @@
             app:closeIcon="@null"
             app:iconifiedByDefault="false"
             app:queryBackground="@null"
-            app:queryHint="__"
-            app:searchIcon="@null"
+            app:queryHint="Search Apps"
+            app:searchIcon="@drawable/ic_search"
             app:theme="@style/AppSearchText" />
 
         <TextView

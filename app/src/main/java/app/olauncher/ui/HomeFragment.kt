@@ -184,8 +184,9 @@ class HomeFragment : Fragment(), View.OnClickListener, View.OnLongClickListener 
 
     private fun setHomeAlignment(horizontalGravity: Int = prefs.homeAlignment) {
         val verticalGravity = if (prefs.homeBottomAlignment) Gravity.BOTTOM else Gravity.CENTER_VERTICAL
-        binding.homeAppsLayout.gravity = horizontalGravity or verticalGravity
+        val horizontalGravityIcons = if (horizontalGravity == Gravity.START) Gravity.END else Gravity.START
         binding.dateTimeLayout.gravity = horizontalGravity
+        binding.homeAppsLayout.gravity = horizontalGravity or verticalGravity
         binding.homeApp1.gravity = horizontalGravity
         binding.homeApp2.gravity = horizontalGravity
         binding.homeApp3.gravity = horizontalGravity
@@ -194,6 +195,16 @@ class HomeFragment : Fragment(), View.OnClickListener, View.OnLongClickListener 
         binding.homeApp6.gravity = horizontalGravity
         binding.homeApp7.gravity = horizontalGravity
         binding.homeApp8.gravity = horizontalGravity
+
+        binding.homeIconsLayout.gravity = horizontalGravityIcons or verticalGravity
+        binding.IconApp1.gravity = horizontalGravityIcons
+        binding.IconApp2.gravity = horizontalGravityIcons
+        binding.IconApp3.gravity = horizontalGravityIcons
+        binding.IconApp4.gravity = horizontalGravityIcons
+        binding.IconApp5.gravity = horizontalGravityIcons
+        binding.IconApp6.gravity = horizontalGravityIcons
+        binding.IconApp7.gravity = horizontalGravityIcons
+        binding.IconApp8.gravity = horizontalGravityIcons
     }
 
     private fun populateDateTime() {

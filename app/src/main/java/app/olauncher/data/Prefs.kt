@@ -13,6 +13,7 @@ class Prefs(context: Context) {
     private val FIRST_HIDE = "FIRST_HIDE"
     private val LOCK_MODE = "LOCK_MODE"
     private val HOME_APPS_NUM = "HOME_APPS_NUM"
+    private val HOME_ICONS_NUM = "HOME_ICONS_NUM"
     private val AUTO_SHOW_KEYBOARD = "AUTO_SHOW_KEYBOARD"
     private val KEYBOARD_MESSAGE = "KEYBOARD_MESSAGE"
     private val DAILY_WALLPAPER = "DAILY_WALLPAPER"
@@ -121,12 +122,16 @@ class Prefs(context: Context) {
         get() = prefs.getInt(HOME_APPS_NUM, 4)
         set(value) = prefs.edit().putInt(HOME_APPS_NUM, value).apply()
 
+    var homeIconsNum: Int
+        get() = prefs.getInt(HOME_ICONS_NUM, 4)
+        set(value) = prefs.edit().putInt(HOME_ICONS_NUM, value).apply()
+
     var homeAlignment: Int
         get() = prefs.getInt(HOME_ALIGNMENT, Gravity.START)
         set(value) = prefs.edit().putInt(HOME_ALIGNMENT, value).apply()
 
     var homeBottomAlignment: Boolean
-        get() = prefs.getBoolean(HOME_BOTTOM_ALIGNMENT, false)
+        get() = prefs.getBoolean(HOME_BOTTOM_ALIGNMENT, true)
         set(value) = prefs.edit().putBoolean(HOME_BOTTOM_ALIGNMENT, value).apply()
 
     var appLabelAlignment: Int

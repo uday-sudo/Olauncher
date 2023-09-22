@@ -52,6 +52,7 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
         checkAdminPermission()
 
         binding.homeAppsNum.text = prefs.homeAppsNum.toString()
+        binding.homeIconsNum.text = prefs.homeIconsNum.toString()
         populateKeyboardText()
         populateLockSettings()
         populateWallpaperText()
@@ -83,11 +84,12 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
             R.id.toggleLock -> toggleLockMode()
             R.id.autoShowKeyboard -> toggleKeyboardText()
             R.id.homeAppsNum -> binding.appsNumSelectLayout.visibility = View.VISIBLE
+            R.id.homeIconsNum -> binding.iconsNumSelectLayout.visibility = View.VISIBLE
             R.id.dailyWallpaperUrl -> requireContext().openUrl(prefs.dailyWallpaperUrl)
             R.id.dailyWallpaper -> toggleDailyWallpaperUpdate()
             R.id.alignment -> binding.alignmentSelectLayout.visibility = View.VISIBLE
             R.id.alignmentLeft -> viewModel.updateHomeAlignment(Gravity.START)
-            R.id.alignmentCenter -> viewModel.updateHomeAlignment(Gravity.CENTER)
+            //R.id.alignmentCenter -> viewModel.updateHomeAlignment(Gravity.CENTER)
             R.id.alignmentRight -> viewModel.updateHomeAlignment(Gravity.END)
             R.id.alignmentBottom -> updateHomeBottomAlignment()
             R.id.statusBar -> toggleStatusBar()
@@ -115,6 +117,16 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
             R.id.maxApps6 -> updateHomeAppsNum(6)
             R.id.maxApps7 -> updateHomeAppsNum(7)
             R.id.maxApps8 -> updateHomeAppsNum(8)
+
+            R.id.maxIcons0 -> updateHomeIconsNum(0)
+            R.id.maxIcons1 -> updateHomeIconsNum(1)
+            R.id.maxIcons2 -> updateHomeIconsNum(2)
+            R.id.maxIcons3 -> updateHomeIconsNum(3)
+            R.id.maxIcons4 -> updateHomeIconsNum(4)
+            R.id.maxIcons5 -> updateHomeIconsNum(5)
+            R.id.maxIcons6 -> updateHomeIconsNum(6)
+            R.id.maxIcons7 -> updateHomeIconsNum(7)
+            R.id.maxIcons8 -> updateHomeIconsNum(8)
 
             R.id.textSize1 -> updateTextSizeScale(Constants.TextSize.ONE)
             R.id.textSize2 -> updateTextSizeScale(Constants.TextSize.TWO)
@@ -175,11 +187,12 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
         binding.autoShowKeyboard.setOnClickListener(this)
         binding.toggleLock.setOnClickListener(this)
         binding.homeAppsNum.setOnClickListener(this)
+        binding.homeIconsNum.setOnClickListener(this)
         binding.dailyWallpaperUrl.setOnClickListener(this)
         binding.dailyWallpaper.setOnClickListener(this)
         binding.alignment.setOnClickListener(this)
         binding.alignmentLeft.setOnClickListener(this)
-        binding.alignmentCenter.setOnClickListener(this)
+        //binding.alignmentCenter.setOnClickListener(this)
         binding.alignmentRight.setOnClickListener(this)
         binding.alignmentBottom.setOnClickListener(this)
         binding.statusBar.setOnClickListener(this)
@@ -217,6 +230,16 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
         binding.maxApps6.setOnClickListener(this)
         binding.maxApps7.setOnClickListener(this)
         binding.maxApps8.setOnClickListener(this)
+
+        binding.maxIcons0.setOnClickListener(this)
+        binding.maxIcons1.setOnClickListener(this)
+        binding.maxIcons2.setOnClickListener(this)
+        binding.maxIcons3.setOnClickListener(this)
+        binding.maxIcons4.setOnClickListener(this)
+        binding.maxIcons5.setOnClickListener(this)
+        binding.maxIcons6.setOnClickListener(this)
+        binding.maxIcons7.setOnClickListener(this)
+        binding.maxIcons8.setOnClickListener(this)
 
         binding.textSize1.setOnClickListener(this)
         binding.textSize2.setOnClickListener(this)
@@ -423,6 +446,13 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
         binding.homeAppsNum.text = num.toString()
         binding.appsNumSelectLayout.visibility = View.GONE
         prefs.homeAppsNum = num
+        viewModel.refreshHome(true)
+    }
+
+    private fun updateHomeIconsNum(num: Int) {
+        binding.homeIconsNum.text = num.toString()
+        binding.iconsNumSelectLayout.visibility = View.GONE
+        prefs.homeIconsNum = num
         viewModel.refreshHome(true)
     }
 
