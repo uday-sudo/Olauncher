@@ -45,6 +45,7 @@
     <string name="rename">Переименовать</string>
     <string name="show_date_time">Показывать дату и время</string>
     <string name="appearance">Появление</string>
+    <string name="choose_an_icon">Выберите иконку</string>
     <string name="gestures">Жесты</string>
     <string name="theme_mode">Тема</string>
     <string name="system_default">Системная</string>

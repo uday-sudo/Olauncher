@@ -77,6 +77,7 @@
     <string name="rename">Umbenennen</string>
     <string name="show_date_time">Datum und Uhrzeit anzeigen</string>
     <string name="appearance">Aussehen</string>
+    <string name="choose_an_icon">Wählen Sie ein Symbol</string>
     <string name="gestures">Gesten</string>
     <string name="theme_mode">Themenmodus</string>
     <string name="system_default">System</string>

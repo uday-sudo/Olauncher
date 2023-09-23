@@ -76,6 +76,7 @@
     <string name="rename">إعادة تسمية</string>
     <string name="show_date_time">إظهار التاريخ والوقت</string>
     <string name="appearance">مظهر</string>
+    <string name="choose_an_icon">اختر أيقونة</string>
     <string name="gestures">إيماءات</string>
     <string name="theme_mode">وضع الموضوع</string>
     <string name="system_default">نظام</string>

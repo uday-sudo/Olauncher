@@ -77,6 +77,7 @@
     <string name="rename">Zmień</string>
     <string name="show_date_time">Pokaż datę i godzinę</string>
     <string name="appearance">Wygląd</string>
+    <string name="choose_an_icon">Wybierz ikonę</string>
     <string name="gestures">Gesty</string>
     <string name="theme_mode">Temat</string>
     <string name="system_default">System</string>

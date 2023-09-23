@@ -37,5 +37,16 @@ P.S. Feel free to mention your favourite coffee brand. I'll try it if I can.
 - [ ] Interrupt - We gently interrupt you whenever you open a time-wasting app. It can greatly help you in reducing your screen time.
 - [ ] Icons on home screen
 - [ ] Update links in app
-
+- [ ] List of Icons To Create
+    - Music
+    - Message
+    - Mail
+    - Web
+    - Search
+    - Gallery
+    - Camera
+    - Call
+    - Circle
 Changing
+
+<a href="https://www.flaticon.com/free-icons/music" title="Android icons">Icons created by Freepik - Flaticon</a>

@@ -45,6 +45,7 @@
     <string name="rename">Перенайменувати</string>
     <string name="show_date_time">Показувати дату та час</string>
     <string name="appearance">Поява</string>
+    <string name="choose_an_icon">Виберіть піктограму</string>
     <string name="gestures">Жести</string>
     <string name="theme_mode">Тема</string>
     <string name="system_default">Системна</string>

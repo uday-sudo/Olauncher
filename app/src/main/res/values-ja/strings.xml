@@ -78,6 +78,7 @@
     <string name="rename">名前の変更</string>
     <string name="show_date_time">日付時刻を表示する</string>
     <string name="appearance">外観</string>
+    <string name="choose_an_icon">アイコンを選択してください</string>
     <string name="gestures">ジェスチャー</string>
     <string name="theme_mode">テーマモード</string>
     <string name="system_default">システム</string>

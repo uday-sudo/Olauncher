@@ -57,6 +57,7 @@
     <string name="rename">Byt namn</string>
     <string name="show_date_time">Visa datum och tid</string>
     <string name="appearance">Utseende</string>
+    <string name="choose_an_icon">Välj en ikon</string>
     <string name="gestures">Gester</string>
     <string name="theme_mode">Tema</string>
     <string name="system_default">System</string>

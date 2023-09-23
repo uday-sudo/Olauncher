@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
@@ -163,93 +164,86 @@
         android:paddingTop="112dp"
         android:paddingBottom="48dp">
 
-        <TextView
+        <ImageView
             android:id="@+id/IconApp1"
-            style="@style/TextLarge"
+            android:src="@drawable/ic_circle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/app"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            app:tint="@color/colorPrimary" />
 
-        <TextView
+        <ImageView
             android:id="@+id/IconApp2"
-            style="@style/TextLarge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/app"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            app:tint="@color/colorPrimary" />
 
-        <TextView
+        <ImageView
             android:id="@+id/IconApp3"
-            style="@style/TextLarge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/app"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            app:tint="@color/colorPrimary" />
 
-        <TextView
+        <ImageView
             android:id="@+id/IconApp4"
-            style="@style/TextLarge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/app"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            app:tint="@color/colorPrimary" />
 
-        <TextView
+        <ImageView
             android:id="@+id/IconApp5"
-            style="@style/TextLarge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/app"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            app:tint="@color/colorPrimary" />
 
-        <TextView
+        <ImageView
             android:id="@+id/IconApp6"
-            style="@style/TextLarge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/app"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            app:tint="@color/colorPrimary" />
 
-        <TextView
+        <ImageView
             android:id="@+id/IconApp7"
-            style="@style/TextLarge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/app"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            app:tint="@color/colorPrimary" />
 
-        <TextView
+        <ImageView
             android:id="@+id/IconApp8"
-            style="@style/TextLarge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/app"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            app:tint="@color/colorPrimary" />
 
 
     </LinearLayout>

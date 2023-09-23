@@ -77,6 +77,7 @@
     <string name="rename">Yeniden isimlendirmek</string>
     <string name="show_date_time">Tarih saatini göster</string>
     <string name="appearance">Dış görünüş</string>
+    <string name="choose_an_icon">Bir Simge Seçin</string>
     <string name="gestures">Mimik</string>
     <string name="theme_mode">Tema modu</string>
     <string name="system_default">sistem</string>

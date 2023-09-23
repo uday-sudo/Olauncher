@@ -45,6 +45,7 @@
     <string name="rename">Rebautizar</string>
     <string name="show_date_time">Mostrar fecha y hora</string>
     <string name="appearance">Apariencia</string>
+    <string name="choose_an_icon">Elige un icono</string>
     <string name="gestures">Gestualidad</string>
     <string name="theme_mode">Modo de tema</string>
     <string name="system_default">Sistema</string>
