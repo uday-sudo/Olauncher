@@ -117,6 +117,70 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 refreshHome(false)
             }
 
+            Constants.FLAG_SET_HOME_ICON_1 -> {
+                prefs.iconName1 = appModel.appLabel
+                prefs.iconPackage1 = appModel.appPackage
+                prefs.iconUser1 = appModel.user.toString()
+                prefs.iconActivityClassName1 = appModel.activityClassName
+                refreshHome(false)
+            }
+
+            Constants.FLAG_SET_HOME_ICON_2 -> {
+                prefs.iconName2 = appModel.appLabel
+                prefs.iconPackage2 = appModel.appPackage
+                prefs.iconUser2 = appModel.user.toString()
+                prefs.iconActivityClassName2 = appModel.activityClassName
+                refreshHome(false)
+            }
+
+            Constants.FLAG_SET_HOME_ICON_3 -> {
+                prefs.iconName3 = appModel.appLabel
+                prefs.iconPackage3 = appModel.appPackage
+                prefs.iconUser3 = appModel.user.toString()
+                prefs.iconActivityClassName3 = appModel.activityClassName
+                refreshHome(false)
+            }
+
+            Constants.FLAG_SET_HOME_ICON_4 -> {
+                prefs.iconName4 = appModel.appLabel
+                prefs.iconPackage4 = appModel.appPackage
+                prefs.iconUser4 = appModel.user.toString()
+                prefs.iconActivityClassName4 = appModel.activityClassName
+                refreshHome(false)
+            }
+
+            Constants.FLAG_SET_HOME_ICON_5 -> {
+                prefs.iconName5 = appModel.appLabel
+                prefs.iconPackage5 = appModel.appPackage
+                prefs.iconUser5 = appModel.user.toString()
+                prefs.iconActivityClassName5 = appModel.activityClassName
+                refreshHome(false)
+            }
+
+            Constants.FLAG_SET_HOME_ICON_6 -> {
+                prefs.iconName6 = appModel.appLabel
+                prefs.iconPackage6 = appModel.appPackage
+                prefs.iconUser6 = appModel.user.toString()
+                prefs.iconActivityClassName6 = appModel.activityClassName
+                refreshHome(false)
+            }
+
+            Constants.FLAG_SET_HOME_ICON_7 -> {
+                prefs.iconName7 = appModel.appLabel
+                prefs.iconPackage7 = appModel.appPackage
+                prefs.iconUser7 = appModel.user.toString()
+                prefs.iconActivityClassName7 = appModel.activityClassName
+                refreshHome(false)
+            }
+
+            Constants.FLAG_SET_HOME_ICON_8 -> {
+                prefs.iconName8 = appModel.appLabel
+                prefs.iconPackage8 = appModel.appPackage
+                prefs.iconUser8 = appModel.user.toString()
+                prefs.iconActivityClassName8 = appModel.activityClassName
+                refreshHome(false)
+            }
+
             Constants.FLAG_SET_SWIPE_LEFT_APP -> {
                 prefs.appNameSwipeLeft = appModel.appLabel
                 prefs.appPackageSwipeLeft = appModel.appPackage

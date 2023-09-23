@@ -69,6 +69,39 @@ class Prefs(context: Context) {
     private val APP_USER_7 = "APP_USER_7"
     private val APP_USER_8 = "APP_USER_8"
 
+    private val ICON_NAME_1 = "ICON_NAME_1"
+    private val ICON_NAME_2 = "ICON_NAME_2"
+    private val ICON_NAME_3 = "ICON_NAME_3"
+    private val ICON_NAME_4 = "ICON_NAME_4"
+    private val ICON_NAME_5 = "ICON_NAME_5"
+    private val ICON_NAME_6 = "ICON_NAME_6"
+    private val ICON_NAME_7 = "ICON_NAME_7"
+    private val ICON_NAME_8 = "ICON_NAME_8"
+    private val ICON_PACKAGE_1 = "ICON_PACKAGE_1"
+    private val ICON_PACKAGE_2 = "ICON_PACKAGE_2"
+    private val ICON_PACKAGE_3 = "ICON_PACKAGE_3"
+    private val ICON_PACKAGE_4 = "ICON_PACKAGE_4"
+    private val ICON_PACKAGE_5 = "ICON_PACKAGE_5"
+    private val ICON_PACKAGE_6 = "ICON_PACKAGE_6"
+    private val ICON_PACKAGE_7 = "ICON_PACKAGE_7"
+    private val ICON_PACKAGE_8 = "ICON_PACKAGE_8"
+    private val ICON_ACTIVITY_CLASS_NAME_1 = "ICON_ACTIVITY_CLASS_NAME_1"
+    private val ICON_ACTIVITY_CLASS_NAME_2 = "ICON_ACTIVITY_CLASS_NAME_2"
+    private val ICON_ACTIVITY_CLASS_NAME_3 = "ICON_ACTIVITY_CLASS_NAME_3"
+    private val ICON_ACTIVITY_CLASS_NAME_4 = "ICON_ACTIVITY_CLASS_NAME_4"
+    private val ICON_ACTIVITY_CLASS_NAME_5 = "ICON_ACTIVITY_CLASS_NAME_5"
+    private val ICON_ACTIVITY_CLASS_NAME_6 = "ICON_ACTIVITY_CLASS_NAME_6"
+    private val ICON_ACTIVITY_CLASS_NAME_7 = "ICON_ACTIVITY_CLASS_NAME_7"
+    private val ICON_ACTIVITY_CLASS_NAME_8 = "ICON_ACTIVITY_CLASS_NAME_8"
+    private val ICON_USER_1 = "ICON_USER_1"
+    private val ICON_USER_2 = "ICON_USER_2"
+    private val ICON_USER_3 = "ICON_USER_3"
+    private val ICON_USER_4 = "ICON_USER_4"
+    private val ICON_USER_5 = "ICON_USER_5"
+    private val ICON_USER_6 = "ICON_USER_6"
+    private val ICON_USER_7 = "ICON_USER_7"
+    private val ICON_USER_8 = "ICON_USER_8"
+
     private val APP_NAME_SWIPE_LEFT = "APP_NAME_SWIPE_LEFT"
     private val APP_NAME_SWIPE_RIGHT = "APP_NAME_SWIPE_RIGHT"
     private val APP_PACKAGE_SWIPE_LEFT = "APP_PACKAGE_SWIPE_LEFT"
@@ -318,6 +351,135 @@ class Prefs(context: Context) {
         get() = prefs.getString(APP_USER_8, "").toString()
         set(value) = prefs.edit().putString(APP_USER_8, value).apply()
 
+    var iconName1: String
+        get() = prefs.getString(ICON_NAME_1, "").toString()
+        set(value) = prefs.edit().putString(ICON_NAME_1, value).apply()
+
+    var iconName2: String
+        get() = prefs.getString(ICON_NAME_2, "").toString()
+        set(value) = prefs.edit().putString(ICON_NAME_2, value).apply()
+
+    var iconName3: String
+        get() = prefs.getString(ICON_NAME_3, "").toString()
+        set(value) = prefs.edit().putString(ICON_NAME_3, value).apply()
+
+    var iconName4: String
+        get() = prefs.getString(ICON_NAME_4, "").toString()
+        set(value) = prefs.edit().putString(ICON_NAME_4, value).apply()
+
+    var iconName5: String
+        get() = prefs.getString(ICON_NAME_5, "").toString()
+        set(value) = prefs.edit().putString(ICON_NAME_5, value).apply()
+
+    var iconName6: String
+        get() = prefs.getString(ICON_NAME_6, "").toString()
+        set(value) = prefs.edit().putString(ICON_NAME_6, value).apply()
+
+    var iconName7: String
+        get() = prefs.getString(ICON_NAME_7, "").toString()
+        set(value) = prefs.edit().putString(ICON_NAME_7, value).apply()
+
+    var iconName8: String
+        get() = prefs.getString(ICON_NAME_8, "").toString()
+        set(value) = prefs.edit().putString(ICON_NAME_8, value).apply()
+
+    var iconPackage1: String
+        get() = prefs.getString(ICON_PACKAGE_1, "").toString()
+        set(value) = prefs.edit().putString(ICON_PACKAGE_1, value).apply()
+
+    var iconPackage2: String
+        get() = prefs.getString(ICON_PACKAGE_2, "").toString()
+        set(value) = prefs.edit().putString(ICON_PACKAGE_2, value).apply()
+
+    var iconPackage3: String
+        get() = prefs.getString(ICON_PACKAGE_3, "").toString()
+        set(value) = prefs.edit().putString(ICON_PACKAGE_3, value).apply()
+
+    var iconPackage4: String
+        get() = prefs.getString(ICON_PACKAGE_4, "").toString()
+        set(value) = prefs.edit().putString(ICON_PACKAGE_4, value).apply()
+
+    var iconPackage5: String
+        get() = prefs.getString(ICON_PACKAGE_5, "").toString()
+        set(value) = prefs.edit().putString(ICON_PACKAGE_5, value).apply()
+
+    var iconPackage6: String
+        get() = prefs.getString(ICON_PACKAGE_6, "").toString()
+        set(value) = prefs.edit().putString(ICON_PACKAGE_6, value).apply()
+
+    var iconPackage7: String
+        get() = prefs.getString(ICON_PACKAGE_7, "").toString()
+        set(value) = prefs.edit().putString(ICON_PACKAGE_7, value).apply()
+
+    var iconPackage8: String
+        get() = prefs.getString(ICON_PACKAGE_8, "").toString()
+        set(value) = prefs.edit().putString(ICON_PACKAGE_8, value).apply()
+
+    var iconActivityClassName1: String?
+        get() = prefs.getString(ICON_ACTIVITY_CLASS_NAME_1, "").toString()
+        set(value) = prefs.edit().putString(ICON_ACTIVITY_CLASS_NAME_1, value).apply()
+
+    var iconActivityClassName2: String?
+        get() = prefs.getString(ICON_ACTIVITY_CLASS_NAME_2, "").toString()
+        set(value) = prefs.edit().putString(ICON_ACTIVITY_CLASS_NAME_2, value).apply()
+
+    var iconActivityClassName3: String?
+        get() = prefs.getString(ICON_ACTIVITY_CLASS_NAME_3, "").toString()
+        set(value) = prefs.edit().putString(ICON_ACTIVITY_CLASS_NAME_3, value).apply()
+
+    var iconActivityClassName4: String?
+        get() = prefs.getString(ICON_ACTIVITY_CLASS_NAME_4, "").toString()
+        set(value) = prefs.edit().putString(ICON_ACTIVITY_CLASS_NAME_4, value).apply()
+
+    var iconActivityClassName5: String?
+        get() = prefs.getString(ICON_ACTIVITY_CLASS_NAME_5, "").toString()
+        set(value) = prefs.edit().putString(ICON_ACTIVITY_CLASS_NAME_5, value).apply()
+
+    var iconActivityClassName6: String?
+        get() = prefs.getString(ICON_ACTIVITY_CLASS_NAME_6, "").toString()
+        set(value) = prefs.edit().putString(ICON_ACTIVITY_CLASS_NAME_6, value).apply()
+
+    var iconActivityClassName7: String?
+        get() = prefs.getString(ICON_ACTIVITY_CLASS_NAME_7, "").toString()
+        set(value) = prefs.edit().putString(ICON_ACTIVITY_CLASS_NAME_7, value).apply()
+
+    var iconActivityClassName8: String?
+        get() = prefs.getString(ICON_ACTIVITY_CLASS_NAME_8, "").toString()
+        set(value) = prefs.edit().putString(ICON_ACTIVITY_CLASS_NAME_8, value).apply()
+
+    var iconUser1: String
+        get() = prefs.getString(ICON_USER_1, "").toString()
+        set(value) = prefs.edit().putString(ICON_USER_1, value).apply()
+
+    var iconUser2: String
+        get() = prefs.getString(ICON_USER_2, "").toString()
+        set(value) = prefs.edit().putString(ICON_USER_2, value).apply()
+
+    var iconUser3: String
+        get() = prefs.getString(ICON_USER_3, "").toString()
+        set(value) = prefs.edit().putString(ICON_USER_3, value).apply()
+
+    var iconUser4: String
+        get() = prefs.getString(ICON_USER_4, "").toString()
+        set(value) = prefs.edit().putString(ICON_USER_4, value).apply()
+
+    var iconUser5: String
+        get() = prefs.getString(ICON_USER_5, "").toString()
+        set(value) = prefs.edit().putString(ICON_USER_5, value).apply()
+
+    var iconUser6: String
+        get() = prefs.getString(ICON_USER_6, "").toString()
+        set(value) = prefs.edit().putString(ICON_USER_6, value).apply()
+
+    var iconUser7: String
+        get() = prefs.getString(ICON_USER_7, "").toString()
+        set(value) = prefs.edit().putString(ICON_USER_7, value).apply()
+
+    var iconUser8: String
+        get() = prefs.getString(ICON_USER_8, "").toString()
+        set(value) = prefs.edit().putString(ICON_USER_8, value).apply()
+
+
     var appNameSwipeLeft: String
         get() = prefs.getString(APP_NAME_SWIPE_LEFT, "Camera").toString()
         set(value) = prefs.edit().putString(APP_NAME_SWIPE_LEFT, value).apply()
@@ -426,6 +588,62 @@ class Prefs(context: Context) {
             6 -> prefs.getString(APP_USER_6, "").toString()
             7 -> prefs.getString(APP_USER_7, "").toString()
             8 -> prefs.getString(APP_USER_8, "").toString()
+            else -> ""
+        }
+    }
+
+    fun getIconName(location: Int): String {
+        return when (location) {
+            1 -> prefs.getString(ICON_NAME_1, "").toString()
+            2 -> prefs.getString(ICON_NAME_2, "").toString()
+            3 -> prefs.getString(ICON_NAME_3, "").toString()
+            4 -> prefs.getString(ICON_NAME_4, "").toString()
+            5 -> prefs.getString(ICON_NAME_5, "").toString()
+            6 -> prefs.getString(ICON_NAME_6, "").toString()
+            7 -> prefs.getString(ICON_NAME_7, "").toString()
+            8 -> prefs.getString(ICON_NAME_8, "").toString()
+            else -> ""
+        }
+    }
+
+    fun getIconPackage(location: Int): String {
+        return when (location) {
+            1 -> prefs.getString(ICON_PACKAGE_1, "").toString()
+            2 -> prefs.getString(ICON_PACKAGE_2, "").toString()
+            3 -> prefs.getString(ICON_PACKAGE_3, "").toString()
+            4 -> prefs.getString(ICON_PACKAGE_4, "").toString()
+            5 -> prefs.getString(ICON_PACKAGE_5, "").toString()
+            6 -> prefs.getString(ICON_PACKAGE_6, "").toString()
+            7 -> prefs.getString(ICON_PACKAGE_7, "").toString()
+            8 -> prefs.getString(ICON_PACKAGE_8, "").toString()
+            else -> ""
+        }
+    }
+
+    fun getIconActivityClassName(location: Int): String {
+        return when (location) {
+            1 -> prefs.getString(ICON_ACTIVITY_CLASS_NAME_1, "").toString()
+            2 -> prefs.getString(ICON_ACTIVITY_CLASS_NAME_2, "").toString()
+            3 -> prefs.getString(ICON_ACTIVITY_CLASS_NAME_3, "").toString()
+            4 -> prefs.getString(ICON_ACTIVITY_CLASS_NAME_4, "").toString()
+            5 -> prefs.getString(ICON_ACTIVITY_CLASS_NAME_5, "").toString()
+            6 -> prefs.getString(ICON_ACTIVITY_CLASS_NAME_6, "").toString()
+            7 -> prefs.getString(ICON_ACTIVITY_CLASS_NAME_7, "").toString()
+            8 -> prefs.getString(ICON_ACTIVITY_CLASS_NAME_8, "").toString()
+            else -> ""
+        }
+    }
+
+    fun getIconUser(location: Int): String {
+        return when (location) {
+            1 -> prefs.getString(ICON_USER_1, "").toString()
+            2 -> prefs.getString(ICON_USER_2, "").toString()
+            3 -> prefs.getString(ICON_USER_3, "").toString()
+            4 -> prefs.getString(ICON_USER_4, "").toString()
+            5 -> prefs.getString(ICON_USER_5, "").toString()
+            6 -> prefs.getString(ICON_USER_6, "").toString()
+            7 -> prefs.getString(ICON_USER_7, "").toString()
+            8 -> prefs.getString(ICON_USER_8, "").toString()
             else -> ""
         }
     }
