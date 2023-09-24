@@ -76,6 +76,16 @@ object Constants {
     const val FLAG_SET_CLOCK_APP = 13
     const val FLAG_SET_CALENDAR_APP = 14
 
+    const val IC_CAMERA = "ic_camera"
+    const val IC_CIRCLE = "ic_circle"
+    const val IC_GALLERY = "ic_gallery"
+    const val IC_MAIL = "ic_mail"
+    const val IC_MESSAGE = "ic_message"
+    const val IC_MUSIC = "ic_music"
+    const val IC_PHONE = "ic_phone"
+    const val IC_SEARCH = "ic_search"
+    const val IC_WEB = "ic_web"
+
     const val REQUEST_CODE_ENABLE_ADMIN = 666
 
     const val HINT_RATE_US = 15

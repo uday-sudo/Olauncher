@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
@@ -156,99 +157,99 @@
         android:id="@+id/homeIconsLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_vertical"
+        android:gravity="center_vertical|end"
         android:orientation="vertical"
-        android:paddingHorizontal="40dp"
+        android:paddingHorizontal="20dp"
         android:paddingTop="112dp"
         android:paddingBottom="48dp">
 
-        <TextView
+        <ImageView
             android:id="@+id/IconApp1"
-            style="@style/TextLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/app"
+            android:src="@drawable/ic_circle"
+            android:layout_width="@dimen/img_large"
+            android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            app:tint="?attr/primaryColor" />
 
-        <TextView
+        <ImageView
             android:id="@+id/IconApp2"
-            style="@style/TextLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/app"
+            android:src="@drawable/ic_circle"
+            android:layout_width="@dimen/img_large"
+            android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            app:tint="?attr/primaryColor" />
 
-        <TextView
+        <ImageView
             android:id="@+id/IconApp3"
-            style="@style/TextLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/app"
+            android:src="@drawable/ic_circle"
+            android:layout_width="@dimen/img_large"
+            android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            app:tint="?attr/primaryColor" />
 
-        <TextView
+        <ImageView
             android:id="@+id/IconApp4"
-            style="@style/TextLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/app"
+            android:src="@drawable/ic_circle"
+            android:layout_width="@dimen/img_large"
+            android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            app:tint="?attr/primaryColor" />
 
-        <TextView
+        <ImageView
             android:id="@+id/IconApp5"
-            style="@style/TextLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/app"
+            android:src="@drawable/ic_circle"
+            android:layout_width="@dimen/img_large"
+            android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            app:tint="?attr/primaryColor" />
 
-        <TextView
+        <ImageView
             android:id="@+id/IconApp6"
-            style="@style/TextLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/app"
+            android:src="@drawable/ic_circle"
+            android:layout_width="@dimen/img_large"
+            android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            app:tint="?attr/primaryColor" />
 
-        <TextView
+        <ImageView
             android:id="@+id/IconApp7"
-            style="@style/TextLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/app"
+            android:src="@drawable/ic_circle"
+            android:layout_width="@dimen/img_large"
+            android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            app:tint="?attr/primaryColor" />
 
-        <TextView
+        <ImageView
             android:id="@+id/IconApp8"
-            style="@style/TextLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/app"
+            android:src="@drawable/ic_circle"
+            android:layout_width="@dimen/img_large"
+            android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
-            tools:visibility="visible" />
+            tools:visibility="visible"
+            app:tint="?attr/primaryColor" />
 
 
     </LinearLayout>

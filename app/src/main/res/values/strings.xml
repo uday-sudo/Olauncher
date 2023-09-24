@@ -14,6 +14,9 @@
     <string name="tag_7" translatable="false">7</string>
     <string name="tag_8" translatable="false">8</string>
 
+    <string name="first_fragment_label">First Fragment Label</string>
+    <string name="second_fragment_label">Second Fragment Label</string>
+
     <string name="app">App</string>
     <string name="set_as_default_launcher">Set as default launcher</string>
     <string name="app_text_color">Text color</string>
@@ -60,6 +63,7 @@
     <string name="show_date_time">Show date time</string>
     <string name="appearance">Appearance</string>
     <string name="choose_an_icon">Choose an Icon</string>
+    <string name="choose_icons">Choose Icons</string>
     <string name="gestures">Gestures</string>
     <string name="theme_mode">Theme mode</string>
     <string name="system_default">System</string>
@@ -172,4 +176,12 @@
     </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="icon_app_1">Icon App 1</string>
+    <string name="icon_app_2">Icon App 2</string>
+    <string name="icon_app_3">Icon App 3</string>
+    <string name="icon_app_4">Icon App 4</string>
+    <string name="icon_app_5">Icon App 5</string>
+    <string name="icon_app_6">Icon App 6</string>
+    <string name="icon_app_7">Icon App 7</string>
+    <string name="icon_app_8">Icon App 8</string>
 </resources>

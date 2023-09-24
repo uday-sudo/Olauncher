@@ -42,9 +42,82 @@
                 android:textColor="?attr/primaryColor" />
 
             <ImageView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
+                android:id="@+id/iconOption1"
+                android:layout_height="@dimen/img_large"
+                android:layout_width="@dimen/img_large"
                 android:src="@drawable/ic_search"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                app:tint="?attr/primaryColor" />
+
+            <ImageView
+                android:id="@+id/iconOption2"
+                android:layout_height="@dimen/img_large"
+                android:layout_width="@dimen/img_large"
+                android:src="@drawable/ic_circle"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                app:tint="?attr/primaryColor" />
+
+            <ImageView
+                android:id="@+id/iconOption3"
+                android:layout_height="@dimen/img_large"
+                android:layout_width="@dimen/img_large"
+                android:src="@drawable/ic_camera"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                app:tint="?attr/primaryColor" />
+
+            <ImageView
+                android:id="@+id/iconOption4"
+                android:layout_height="@dimen/img_large"
+                android:layout_width="@dimen/img_large"
+                android:src="@drawable/ic_gallery"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                app:tint="?attr/primaryColor" />
+
+            <ImageView
+                android:id="@+id/iconOption5"
+                android:layout_height="@dimen/img_large"
+                android:layout_width="@dimen/img_large"
+                android:src="@drawable/ic_mail"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                app:tint="?attr/primaryColor" />
+
+            <ImageView
+                android:id="@+id/iconOption6"
+                android:layout_height="@dimen/img_large"
+                android:layout_width="@dimen/img_large"
+                android:src="@drawable/ic_message"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                app:tint="?attr/primaryColor" />
+
+            <ImageView
+                android:id="@+id/iconOption7"
+                android:layout_height="@dimen/img_large"
+                android:layout_width="@dimen/img_large"
+                android:src="@drawable/ic_music"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                app:tint="?attr/primaryColor" />
+
+            <ImageView
+                android:id="@+id/iconOption8"
+                android:layout_height="@dimen/img_large"
+                android:layout_width="@dimen/img_large"
+                android:src="@drawable/ic_phone"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                app:tint="?attr/primaryColor" />
+
+            <ImageView
+                android:id="@+id/iconOption9"
+                android:layout_height="@dimen/img_large"
+                android:layout_width="@dimen/img_large"
+                android:src="@drawable/ic_web"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="12dp"
                 app:tint="?attr/primaryColor" />

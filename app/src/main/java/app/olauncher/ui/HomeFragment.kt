@@ -215,14 +215,14 @@ class HomeFragment : Fragment(), View.OnClickListener, View.OnLongClickListener 
         binding.homeApp8.gravity = horizontalGravity
 
         binding.homeIconsLayout.gravity = horizontalGravityIcons or verticalGravity
-        binding.IconApp1.gravity = horizontalGravityIcons
-        binding.IconApp2.gravity = horizontalGravityIcons
-        binding.IconApp3.gravity = horizontalGravityIcons
-        binding.IconApp4.gravity = horizontalGravityIcons
-        binding.IconApp5.gravity = horizontalGravityIcons
-        binding.IconApp6.gravity = horizontalGravityIcons
-        binding.IconApp7.gravity = horizontalGravityIcons
-        binding.IconApp8.gravity = horizontalGravityIcons
+        //binding.IconApp1.gravity = horizontalGravityIcons
+        //binding.IconApp2.gravity = horizontalGravityIcons
+        //binding.IconApp3.gravity = horizontalGravityIcons
+        //binding.IconApp4.gravity = horizontalGravityIcons
+        //binding.IconApp5.gravity = horizontalGravityIcons
+        //binding.IconApp6.gravity = horizontalGravityIcons
+        //binding.IconApp7.gravity = horizontalGravityIcons
+        //binding.IconApp8.gravity = horizontalGravityIcons
     }
 
     private fun populateDateTime() {
@@ -243,7 +243,7 @@ class HomeFragment : Fragment(), View.OnClickListener, View.OnLongClickListener 
         binding.date.text = dateText.replace(".,", ",")
     }
 
-    private fun populateIconApps() {
+    /*private fun populateIconApps() {
 
         val homeIconsNum = prefs.homeIconsNum
         if (homeIconsNum == 0) return
@@ -302,13 +302,42 @@ class HomeFragment : Fragment(), View.OnClickListener, View.OnLongClickListener 
             prefs.iconName8 = ""
             prefs.iconPackage8 = ""
         }
+    }*/
+
+    private fun populateIconApps2() {
+
+        val homeIconsNum = prefs.homeIconsNum
+        if (homeIconsNum == 0) return
+
+        binding.IconApp1.visibility = View.VISIBLE
+        if (homeIconsNum == 1) return
+
+        binding.IconApp2.visibility = View.VISIBLE
+        if (homeIconsNum == 2) return
+
+        binding.IconApp3.visibility = View.VISIBLE
+        if (homeIconsNum == 3) return
+
+        binding.IconApp4.visibility = View.VISIBLE
+        if (homeIconsNum == 4) return
+
+        binding.IconApp5.visibility = View.VISIBLE
+        if (homeIconsNum == 5) return
+
+        binding.IconApp6.visibility = View.VISIBLE
+        if (homeIconsNum == 6) return
+
+        binding.IconApp7.visibility = View.VISIBLE
+        if (homeIconsNum == 7) return
+
+        binding.IconApp8.visibility = View.VISIBLE
     }
 
     private fun populateHomeScreen(appCountUpdated: Boolean) {
         if (appCountUpdated) hideHomeApps()
         populateDateTime()
 
-        populateIconApps()
+        populateIconApps2()
 
         val homeAppsNum = prefs.homeAppsNum
         if (homeAppsNum == 0) return

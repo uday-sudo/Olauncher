@@ -8,5 +8,6 @@
     <dimen name="time_size">45sp</dimen>
     <dimen name="date_size">14sp</dimen>
     <dimen name="alphabet_recycler_margin_top">180dp</dimen>
+    <dimen name="img_large">45sp</dimen>
 
 </resources>

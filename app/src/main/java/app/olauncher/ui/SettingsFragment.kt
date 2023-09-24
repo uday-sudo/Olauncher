@@ -142,6 +142,15 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
             R.id.notifications -> updateSwipeDownAction(Constants.SwipeDownAction.NOTIFICATIONS)
             R.id.search -> updateSwipeDownAction(Constants.SwipeDownAction.SEARCH)
 
+            R.id.icon1 -> updateHomeIcons(1)
+            R.id.icon2 -> updateHomeIcons(2)
+            R.id.icon3 -> updateHomeIcons(3)
+            R.id.icon4 -> updateHomeIcons(4)
+            R.id.icon5 -> updateHomeIcons(5)
+            R.id.icon6 -> updateHomeIcons(6)
+            R.id.icon7 -> updateHomeIcons(7)
+            R.id.icon8 -> updateHomeIcons(8)
+
             R.id.about -> {
                 prefs.aboutClicked = true
                 requireContext().openUrl(Constants.URL_ABOUT_OLAUNCHER)
@@ -255,6 +264,15 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
         binding.swipeLeftApp.setOnLongClickListener(this)
         binding.swipeRightApp.setOnLongClickListener(this)
         binding.toggleLock.setOnLongClickListener(this)
+
+        binding.icon1.setOnClickListener(this)
+        binding.icon2.setOnClickListener(this)
+        binding.icon3.setOnClickListener(this)
+        binding.icon4.setOnClickListener(this)
+        binding.icon5.setOnClickListener(this)
+        binding.icon6.setOnClickListener(this)
+        binding.icon7.setOnClickListener(this)
+        binding.icon8.setOnClickListener(this)
     }
 
     private fun initObservers() {
@@ -454,6 +472,10 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
         binding.iconsNumSelectLayout.visibility = View.GONE
         prefs.homeIconsNum = num
         viewModel.refreshHome(true)
+    }
+
+    private fun updateHomeIcons(num: Int) {
+        findNavController().navigate(R.id.action_settingsFragment_to_iconListFragment)
     }
 
     private fun updateTextSizeScale(sizeScale: Float) {

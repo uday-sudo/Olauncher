@@ -158,7 +158,7 @@
         android:id="@+id/homeIconsLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_vertical"
+        android:gravity="center_vertical|end"
         android:orientation="vertical"
         android:paddingHorizontal="20dp"
         android:paddingTop="112dp"
@@ -167,83 +167,90 @@
         <ImageView
             android:id="@+id/IconApp1"
             android:src="@drawable/ic_circle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/img_large"
+            android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
             tools:visibility="visible"
-            app:tint="@color/colorPrimary" />
+            app:tint="?attr/primaryColor" />
 
         <ImageView
             android:id="@+id/IconApp2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:src="@drawable/ic_circle"
+            android:layout_width="@dimen/img_large"
+            android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
             tools:visibility="visible"
-            app:tint="@color/colorPrimary" />
+            app:tint="?attr/primaryColor" />
 
         <ImageView
             android:id="@+id/IconApp3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:src="@drawable/ic_circle"
+            android:layout_width="@dimen/img_large"
+            android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
             tools:visibility="visible"
-            app:tint="@color/colorPrimary" />
+            app:tint="?attr/primaryColor" />
 
         <ImageView
             android:id="@+id/IconApp4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:src="@drawable/ic_circle"
+            android:layout_width="@dimen/img_large"
+            android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
             tools:visibility="visible"
-            app:tint="@color/colorPrimary" />
+            app:tint="?attr/primaryColor" />
 
         <ImageView
             android:id="@+id/IconApp5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:src="@drawable/ic_circle"
+            android:layout_width="@dimen/img_large"
+            android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
             tools:visibility="visible"
-            app:tint="@color/colorPrimary" />
+            app:tint="?attr/primaryColor" />
 
         <ImageView
             android:id="@+id/IconApp6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:src="@drawable/ic_circle"
+            android:layout_width="@dimen/img_large"
+            android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
             tools:visibility="visible"
-            app:tint="@color/colorPrimary" />
+            app:tint="?attr/primaryColor" />
 
         <ImageView
             android:id="@+id/IconApp7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:src="@drawable/ic_circle"
+            android:layout_width="@dimen/img_large"
+            android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
             tools:visibility="visible"
-            app:tint="@color/colorPrimary" />
+            app:tint="?attr/primaryColor" />
 
         <ImageView
             android:id="@+id/IconApp8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:src="@drawable/ic_circle"
+            android:layout_width="@dimen/img_large"
+            android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
             android:tag="@string/tag_1"
             android:visibility="gone"
             tools:visibility="visible"
-            app:tint="@color/colorPrimary" />
+            app:tint="?attr/primaryColor" />
 
 
     </LinearLayout>
