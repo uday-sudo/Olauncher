@@ -4,15 +4,19 @@ import android.app.admin.DevicePolicyManager
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
+import android.graphics.drawable.Drawable
 import android.os.Build
 import android.os.Bundle
 import android.provider.Settings
+import android.util.Log
 import android.view.*
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.content.ContextCompat
 import androidx.core.os.bundleOf
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import app.olauncher.BuildConfig
@@ -51,6 +55,24 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
         componentName = ComponentName(requireContext(), DeviceAdmin::class.java)
         checkAdminPermission()
 
+        viewModel.iconNameString.observe(viewLifecycleOwner, Observer {
+            Log.d("uday",viewModel.iconNameString.value.toString()+viewModel.iconNum.value.toString())
+
+            when (viewModel.iconNum.value) {
+                1 -> prefs.iconName1 = viewModel.iconNameString.value.toString()
+                2 -> prefs.iconName2 = viewModel.iconNameString.value.toString()
+                3 -> prefs.iconName3 = viewModel.iconNameString.value.toString()
+                4 -> prefs.iconName4 = viewModel.iconNameString.value.toString()
+                5 -> prefs.iconName5 = viewModel.iconNameString.value.toString()
+                6 -> prefs.iconName6 = viewModel.iconNameString.value.toString()
+                7 -> prefs.iconName7 = viewModel.iconNameString.value.toString()
+                8 -> prefs.iconName8 = viewModel.iconNameString.value.toString()
+            }
+            Log.d("uday",prefs.iconName4.toString())
+
+            populateIcons()
+        })
+
         binding.homeAppsNum.text = prefs.homeAppsNum.toString()
         binding.homeIconsNum.text = prefs.homeIconsNum.toString()
         populateKeyboardText()
@@ -66,6 +88,7 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
         populateActionHints()
         initClickListeners()
         initObservers()
+        populateIcons()
     }
 
     override fun onClick(view: View) {
@@ -475,7 +498,47 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
     }
 
     private fun updateHomeIcons(num: Int) {
-        findNavController().navigate(R.id.action_settingsFragment_to_iconListFragment)
+        viewModel.iconNum.value = num
+        findNavController().navigate(R.id.action_settingsFragment_to_iconDrawerFragment)
+        /*viewModel.iconNameString.observe(viewLifecycleOwner, Observer {
+            when (num) {
+                1 -> prefs.iconName1 = viewModel.iconNameString.toString()
+                2 -> prefs.iconName2 = viewModel.iconNameString.toString()
+                3 -> prefs.iconName3 = viewModel.iconNameString.toString()
+                4 -> prefs.iconName4 = viewModel.iconNameString.toString()
+                5 -> prefs.iconName5 = viewModel.iconNameString.toString()
+                6 -> prefs.iconName6 = viewModel.iconNameString.toString()
+                7 -> prefs.iconName7 = viewModel.iconNameString.toString()
+                8 -> prefs.iconName8 = viewModel.iconNameString.toString()
+            }
+        })*/
+        populateIcons()
+    }
+
+    private fun populateIcons() {
+        binding.icon1.setImageDrawable(returnDrawable(prefs.iconName1))
+        binding.icon2.setImageDrawable(returnDrawable(prefs.iconName2))
+        binding.icon3.setImageDrawable(returnDrawable(prefs.iconName3))
+        binding.icon4.setImageDrawable(returnDrawable(prefs.iconName4))
+        binding.icon5.setImageDrawable(returnDrawable(prefs.iconName5))
+        binding.icon6.setImageDrawable(returnDrawable(prefs.iconName6))
+        binding.icon7.setImageDrawable(returnDrawable(prefs.iconName7))
+        binding.icon8.setImageDrawable(returnDrawable(prefs.iconName8))
+    }
+
+    private fun returnDrawable(iconName: String): Drawable? {
+        return when (iconName) {
+            Constants.IC_CAMERA -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_camera) }
+            Constants.IC_CIRCLE -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_circle) }
+            Constants.IC_GALLERY -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_gallery) }
+            Constants.IC_MAIL -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_mail) }
+            Constants.IC_MESSAGE -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_message) }
+            Constants.IC_MUSIC -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_music) }
+            Constants.IC_PHONE -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_phone) }
+            Constants.IC_SEARCH -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_search) }
+            Constants.IC_WEB -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_web) }
+            else -> {context?.let { ContextCompat.getDrawable(it, R.drawable.ic_web) }}
+        }
     }
 
     private fun updateTextSizeScale(sizeScale: Float) {

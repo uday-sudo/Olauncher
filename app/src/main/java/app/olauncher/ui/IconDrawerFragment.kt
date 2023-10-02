@@ -11,23 +11,19 @@ import app.olauncher.MainViewModel
 import app.olauncher.R
 import app.olauncher.data.Constants
 import app.olauncher.data.Prefs
-import app.olauncher.databinding.FragmentHomeBinding
+import app.olauncher.databinding.FragmentAppDrawerBinding
+import app.olauncher.databinding.FragmentIconDrawerBinding
 
-/**
- * A simple [Fragment] subclass.
- * Use the [IconDrawerFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class IconDrawerFragment : Fragment(), View.OnClickListener {
 
     private lateinit var prefs: Prefs
     private lateinit var viewModel: MainViewModel
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentIconDrawerBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentIconDrawerBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -38,6 +34,8 @@ class IconDrawerFragment : Fragment(), View.OnClickListener {
             ViewModelProvider(this)[MainViewModel::class.java]
         } ?: throw Exception("Invalid Activity")
 
+
+        initClickListeners()
     }
 
     override fun onClick(view: View) {
@@ -57,5 +55,17 @@ class IconDrawerFragment : Fragment(), View.OnClickListener {
     private fun updateIconName(name: String) {
         viewModel.iconNameString.value = name
         findNavController().popBackStack()
+    }
+
+    private fun initClickListeners() {
+        binding.iconOption1.setOnClickListener(this)
+        binding.iconOption2.setOnClickListener(this)
+        binding.iconOption3.setOnClickListener(this)
+        binding.iconOption4.setOnClickListener(this)
+        binding.iconOption5.setOnClickListener(this)
+        binding.iconOption6.setOnClickListener(this)
+        binding.iconOption7.setOnClickListener(this)
+        binding.iconOption8.setOnClickListener(this)
+        binding.iconOption9.setOnClickListener(this)
     }
 }

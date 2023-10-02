@@ -33,11 +33,12 @@ P.S. Feel free to mention your favourite coffee brand. I'll try it if I can.
 
 # Todo
 
-- [ ] Wall of widgets - An entire page dedicated to your favorite widgets, accessible via a simple swipe right gesture. Additionally, a weather widget is available on the home screen.
+- [ ] Wall of widgets - An entire page dedicated to your favorite widgets, accessible via a simple swipe right gesture. Additionally, a weather widget is available on the home screen. (not minimal tho)
 - [ ] Interrupt - We gently interrupt you whenever you open a time-wasting app. It can greatly help you in reducing your screen time.
-- [ ] Icons on home screen
+- [x] Make it so that the icons actually work.
+- [x] Icons on home screen
 - [ ] Update links in app
-- [ ] List of Icons To Create
+- [x] List of Icons To Create
     - Music
     - Message
     - Mail
@@ -50,3 +51,5 @@ P.S. Feel free to mention your favourite coffee brand. I'll try it if I can.
 Changing
 
 <a href="https://www.flaticon.com/free-icons/music" title="Android icons">Icons created by Freepik - Flaticon</a>
+
+showapplist

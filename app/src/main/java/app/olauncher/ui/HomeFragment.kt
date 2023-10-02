@@ -2,13 +2,17 @@ package app.olauncher.ui
 
 import android.app.admin.DevicePolicyManager
 import android.content.Context
+import android.graphics.drawable.Drawable
 import android.os.BatteryManager
 import android.os.Build
 import android.os.Bundle
 import android.os.Vibrator
+import android.util.Log
 import android.view.*
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.core.os.bundleOf
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
@@ -56,6 +60,8 @@ class HomeFragment : Fragment(), View.OnClickListener, View.OnLongClickListener 
         setHomeAlignment(prefs.homeAlignment)
         initSwipeTouchListener()
         initClickListeners()
+        populateIcons()
+        //Log.d("check",prefs.iconPackage1)
     }
 
     override fun onResume() {
@@ -243,101 +249,98 @@ class HomeFragment : Fragment(), View.OnClickListener, View.OnLongClickListener 
         binding.date.text = dateText.replace(".,", ",")
     }
 
-    /*private fun populateIconApps() {
+    private fun populateIcons() {
+        binding.IconApp1.setImageDrawable(returnDrawable(prefs.iconName1))
+        binding.IconApp2.setImageDrawable(returnDrawable(prefs.iconName2))
+        binding.IconApp3.setImageDrawable(returnDrawable(prefs.iconName3))
+        binding.IconApp4.setImageDrawable(returnDrawable(prefs.iconName4))
+        binding.IconApp5.setImageDrawable(returnDrawable(prefs.iconName5))
+        binding.IconApp6.setImageDrawable(returnDrawable(prefs.iconName6))
+        binding.IconApp7.setImageDrawable(returnDrawable(prefs.iconName7))
+        binding.IconApp8.setImageDrawable(returnDrawable(prefs.iconName8))
+    }
+
+    private fun returnDrawable(iconName: String): Drawable? {
+        return when (iconName) {
+            Constants.IC_CAMERA -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_camera) }
+            Constants.IC_CIRCLE -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_circle) }
+            Constants.IC_GALLERY -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_gallery) }
+            Constants.IC_MAIL -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_mail) }
+            Constants.IC_MESSAGE -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_message) }
+            Constants.IC_MUSIC -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_music) }
+            Constants.IC_PHONE -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_phone) }
+            Constants.IC_SEARCH -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_search) }
+            Constants.IC_WEB -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_web) }
+            else -> {context?.let { ContextCompat.getDrawable(it, R.drawable.ic_web) }}
+        }
+    }
+
+    private fun populateIconApps() {
 
         val homeIconsNum = prefs.homeIconsNum
         if (homeIconsNum == 0) return
 
         binding.IconApp1.visibility = View.VISIBLE
-        if (!setHomeAppText(binding.IconApp1, prefs.iconName1, prefs.iconPackage1, prefs.iconUser1)) {
-            prefs.iconName1 = ""
+        if (!setHomeAppIcon(binding.IconApp1, prefs.iconName1, prefs.iconPackage1, prefs.iconUser1)) {
+            //prefs.iconName1 = ""
             prefs.iconPackage1 = ""
         }
         if (homeIconsNum == 1) return
 
         binding.IconApp2.visibility = View.VISIBLE
-        if (!setHomeAppText(binding.IconApp2, prefs.iconName2, prefs.iconPackage2, prefs.iconUser2)) {
-            prefs.iconName2 = ""
+        if (!setHomeAppIcon(binding.IconApp2, prefs.iconName2, prefs.iconPackage2, prefs.iconUser2)) {
+            //prefs.iconName2 = ""
             prefs.iconPackage2 = ""
         }
         if (homeIconsNum == 2) return
 
         binding.IconApp3.visibility = View.VISIBLE
-        if (!setHomeAppText(binding.IconApp3, prefs.iconName3, prefs.iconPackage3, prefs.iconUser3)) {
-            prefs.iconName3 = ""
+        if (!setHomeAppIcon(binding.IconApp3, prefs.iconName3, prefs.iconPackage3, prefs.iconUser3)) {
+            //prefs.iconName3 = ""
             prefs.iconPackage3 = ""
         }
         if (homeIconsNum == 3) return
 
         binding.IconApp4.visibility = View.VISIBLE
-        if (!setHomeAppText(binding.IconApp4, prefs.iconName4, prefs.iconPackage4, prefs.iconUser4)) {
-            prefs.iconName4 = ""
+        if (!setHomeAppIcon(binding.IconApp4, prefs.iconName4, prefs.iconPackage4, prefs.iconUser4)) {
+            //prefs.iconName4 = ""
             prefs.iconPackage4 = ""
         }
         if (homeIconsNum == 4) return
 
         binding.IconApp5.visibility = View.VISIBLE
-        if (!setHomeAppText(binding.IconApp5, prefs.iconName5, prefs.iconPackage5, prefs.iconUser5)) {
-            prefs.iconName5 = ""
+        if (!setHomeAppIcon(binding.IconApp5, prefs.iconName5, prefs.iconPackage5, prefs.iconUser5)) {
+            //prefs.iconName5 = ""
             prefs.iconPackage5 = ""
         }
         if (homeIconsNum == 5) return
 
         binding.IconApp6.visibility = View.VISIBLE
-        if (!setHomeAppText(binding.IconApp6, prefs.iconName6, prefs.iconPackage6, prefs.iconUser6)) {
-            prefs.iconName6 = ""
+        if (!setHomeAppIcon(binding.IconApp6, prefs.iconName6, prefs.iconPackage6, prefs.iconUser6)) {
+            //prefs.iconName6 = ""
             prefs.iconPackage6 = ""
         }
         if (homeIconsNum == 6) return
 
         binding.IconApp7.visibility = View.VISIBLE
-        if (!setHomeAppText(binding.IconApp7, prefs.iconName7, prefs.iconPackage7, prefs.iconUser7)) {
-            prefs.iconName7 = ""
+        if (!setHomeAppIcon(binding.IconApp7, prefs.iconName7, prefs.iconPackage7, prefs.iconUser7)) {
+            //prefs.iconName7 = ""
             prefs.iconPackage7 = ""
         }
         if (homeIconsNum == 7) return
 
         binding.IconApp8.visibility = View.VISIBLE
-        if (!setHomeAppText(binding.IconApp8, prefs.iconName8, prefs.iconPackage8, prefs.iconUser8)) {
-            prefs.iconName8 = ""
+        if (!setHomeAppIcon(binding.IconApp8, prefs.iconName8, prefs.iconPackage8, prefs.iconUser8)) {
+            //prefs.iconName8 = ""
             prefs.iconPackage8 = ""
         }
-    }*/
-
-    private fun populateIconApps2() {
-
-        val homeIconsNum = prefs.homeIconsNum
-        if (homeIconsNum == 0) return
-
-        binding.IconApp1.visibility = View.VISIBLE
-        if (homeIconsNum == 1) return
-
-        binding.IconApp2.visibility = View.VISIBLE
-        if (homeIconsNum == 2) return
-
-        binding.IconApp3.visibility = View.VISIBLE
-        if (homeIconsNum == 3) return
-
-        binding.IconApp4.visibility = View.VISIBLE
-        if (homeIconsNum == 4) return
-
-        binding.IconApp5.visibility = View.VISIBLE
-        if (homeIconsNum == 5) return
-
-        binding.IconApp6.visibility = View.VISIBLE
-        if (homeIconsNum == 6) return
-
-        binding.IconApp7.visibility = View.VISIBLE
-        if (homeIconsNum == 7) return
-
-        binding.IconApp8.visibility = View.VISIBLE
     }
 
     private fun populateHomeScreen(appCountUpdated: Boolean) {
         if (appCountUpdated) hideHomeApps()
         populateDateTime()
 
-        populateIconApps2()
+        populateIconApps()
 
         val homeAppsNum = prefs.homeAppsNum
         if (homeAppsNum == 0) return
@@ -407,6 +410,15 @@ class HomeFragment : Fragment(), View.OnClickListener, View.OnLongClickListener 
         return false
     }
 
+    private fun setHomeAppIcon(imageView: ImageView, appName: String, packageName: String, userString: String): Boolean {
+        if (isPackageInstalled(requireContext(), packageName, userString)) {
+            //textView.text = appName
+            return true
+        }
+        //textView.text = ""
+        return false
+    }
+
     private fun hideHomeApps() {
         binding.homeApp1.visibility = View.GONE
         binding.homeApp2.visibility = View.GONE
@@ -429,12 +441,15 @@ class HomeFragment : Fragment(), View.OnClickListener, View.OnLongClickListener 
 
     private fun homeAppClicked(location: Int) {
         if (prefs.getAppName(location).isEmpty()) showLongPressToast()
-        else launchApp(
-            prefs.getAppName(location),
-            prefs.getAppPackage(location),
-            prefs.getAppActivityClassName(location),
-            prefs.getAppUser(location)
-        )
+        else {
+            launchApp(
+                prefs.getAppName(location),
+                prefs.getAppPackage(location),
+                prefs.getAppActivityClassName(location),
+                prefs.getAppUser(location)
+            )
+            Log.d("check", location.toString()+"  this")
+        }
     }
 
     private fun launchApp(appName: String, packageName: String, activityClassName: String?, userString: String) {

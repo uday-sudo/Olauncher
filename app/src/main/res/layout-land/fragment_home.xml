@@ -169,7 +169,7 @@
             android:layout_width="@dimen/img_large"
             android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
-            android:tag="@string/tag_1"
+            android:tag="@string/tag_9"
             android:visibility="gone"
             tools:visibility="visible"
             app:tint="?attr/primaryColor" />
@@ -180,7 +180,7 @@
             android:layout_width="@dimen/img_large"
             android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
-            android:tag="@string/tag_1"
+            android:tag="@string/tag_10"
             android:visibility="gone"
             tools:visibility="visible"
             app:tint="?attr/primaryColor" />
@@ -191,7 +191,7 @@
             android:layout_width="@dimen/img_large"
             android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
-            android:tag="@string/tag_1"
+            android:tag="@string/tag_11"
             android:visibility="gone"
             tools:visibility="visible"
             app:tint="?attr/primaryColor" />
@@ -202,7 +202,7 @@
             android:layout_width="@dimen/img_large"
             android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
-            android:tag="@string/tag_1"
+            android:tag="@string/tag_12"
             android:visibility="gone"
             tools:visibility="visible"
             app:tint="?attr/primaryColor" />
@@ -213,7 +213,7 @@
             android:layout_width="@dimen/img_large"
             android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
-            android:tag="@string/tag_1"
+            android:tag="@string/tag_13"
             android:visibility="gone"
             tools:visibility="visible"
             app:tint="?attr/primaryColor" />
@@ -224,7 +224,7 @@
             android:layout_width="@dimen/img_large"
             android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
-            android:tag="@string/tag_1"
+            android:tag="@string/tag_14"
             android:visibility="gone"
             tools:visibility="visible"
             app:tint="?attr/primaryColor" />
@@ -235,7 +235,7 @@
             android:layout_width="@dimen/img_large"
             android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
-            android:tag="@string/tag_1"
+            android:tag="@string/tag_15"
             android:visibility="gone"
             tools:visibility="visible"
             app:tint="?attr/primaryColor" />
@@ -246,7 +246,7 @@
             android:layout_width="@dimen/img_large"
             android:layout_height="@dimen/img_large"
             android:paddingVertical="@dimen/home_app_padding_vertical"
-            android:tag="@string/tag_1"
+            android:tag="@string/tag_16"
             android:visibility="gone"
             tools:visibility="visible"
             app:tint="?attr/primaryColor" />

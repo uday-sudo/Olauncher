@@ -546,6 +546,14 @@ class Prefs(context: Context) {
             6 -> prefs.getString(APP_NAME_6, "").toString()
             7 -> prefs.getString(APP_NAME_7, "").toString()
             8 -> prefs.getString(APP_NAME_8, "").toString()
+            9 -> prefs.getString(ICON_NAME_1, "").toString()
+            10 -> prefs.getString(ICON_NAME_2, "").toString()
+            11 -> prefs.getString(ICON_NAME_3, "").toString()
+            12 -> prefs.getString(ICON_NAME_4, "").toString()
+            13 -> prefs.getString(ICON_NAME_5, "").toString()
+            14 -> prefs.getString(ICON_NAME_6, "").toString()
+            15 -> prefs.getString(ICON_NAME_7, "").toString()
+            16 -> prefs.getString(ICON_NAME_8, "").toString()
             else -> ""
         }
     }
@@ -560,6 +568,14 @@ class Prefs(context: Context) {
             6 -> prefs.getString(APP_PACKAGE_6, "").toString()
             7 -> prefs.getString(APP_PACKAGE_7, "").toString()
             8 -> prefs.getString(APP_PACKAGE_8, "").toString()
+            9 -> prefs.getString(ICON_PACKAGE_1, "").toString()
+            10 -> prefs.getString(ICON_PACKAGE_2, "").toString()
+            11 -> prefs.getString(ICON_PACKAGE_3, "").toString()
+            12 -> prefs.getString(ICON_PACKAGE_4, "").toString()
+            13 -> prefs.getString(ICON_PACKAGE_5, "").toString()
+            14 -> prefs.getString(ICON_PACKAGE_6, "").toString()
+            15 -> prefs.getString(ICON_PACKAGE_7, "").toString()
+            16 -> prefs.getString(ICON_PACKAGE_8, "").toString()
             else -> ""
         }
     }
@@ -574,6 +590,14 @@ class Prefs(context: Context) {
             6 -> prefs.getString(APP_ACTIVITY_CLASS_NAME_6, "").toString()
             7 -> prefs.getString(APP_ACTIVITY_CLASS_NAME_7, "").toString()
             8 -> prefs.getString(APP_ACTIVITY_CLASS_NAME_8, "").toString()
+            9 -> prefs.getString(ICON_ACTIVITY_CLASS_NAME_1, "").toString()
+            10 -> prefs.getString(ICON_ACTIVITY_CLASS_NAME_2, "").toString()
+            11 -> prefs.getString(ICON_ACTIVITY_CLASS_NAME_3, "").toString()
+            12 -> prefs.getString(ICON_ACTIVITY_CLASS_NAME_4, "").toString()
+            13 -> prefs.getString(ICON_ACTIVITY_CLASS_NAME_5, "").toString()
+            14 -> prefs.getString(ICON_ACTIVITY_CLASS_NAME_6, "").toString()
+            15 -> prefs.getString(ICON_ACTIVITY_CLASS_NAME_7, "").toString()
+            16 -> prefs.getString(ICON_ACTIVITY_CLASS_NAME_8, "").toString()
             else -> ""
         }
     }
@@ -588,6 +612,14 @@ class Prefs(context: Context) {
             6 -> prefs.getString(APP_USER_6, "").toString()
             7 -> prefs.getString(APP_USER_7, "").toString()
             8 -> prefs.getString(APP_USER_8, "").toString()
+            9 -> prefs.getString(ICON_USER_1, "").toString()
+            10 -> prefs.getString(ICON_USER_2, "").toString()
+            11 -> prefs.getString(ICON_USER_3, "").toString()
+            12 -> prefs.getString(ICON_USER_4, "").toString()
+            13 -> prefs.getString(ICON_USER_5, "").toString()
+            14 -> prefs.getString(ICON_USER_6, "").toString()
+            15 -> prefs.getString(ICON_USER_7, "").toString()
+            16 -> prefs.getString(ICON_USER_8, "").toString()
             else -> ""
         }
     }
