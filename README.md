@@ -27,7 +27,7 @@ Contact - [@tanujnotes](https://twitter.com/tanujnotes)
 
 <small>Thank you and have a great day!</small>
 
-<a href="https://www.buymeacoffee.com/tanujnotes"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=tanujnotes&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
+    <a href="https://www.buymeacoffee.com/tanujnotes"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=tanujnotes&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
 
 P.S. Feel free to mention your favourite coffee brand. I'll try it if I can.
 
@@ -37,7 +37,7 @@ P.S. Feel free to mention your favourite coffee brand. I'll try it if I can.
 - [ ] Interrupt - We gently interrupt you whenever you open a time-wasting app. It can greatly help you in reducing your screen time.
 - [x] Make it so that the icons actually work.
 - [x] Icons on home screen
-- [ ] Update links in app
+- [x] Update links in app
 - [x] List of Icons To Create
     - Music
     - Message
@@ -48,7 +48,7 @@ P.S. Feel free to mention your favourite coffee brand. I'll try it if I can.
     - Camera
     - Call
     - Circle
-Changing
+- [ ] Setup ur BuyMeACoffee page
 
 <a href="https://www.flaticon.com/free-icons/music" title="Android icons">Icons created by Freepik - Flaticon</a>
 

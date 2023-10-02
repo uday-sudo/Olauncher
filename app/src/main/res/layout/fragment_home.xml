@@ -48,6 +48,7 @@
             android:textSize="@dimen/date_size"
             android:fontFamily="@font/hindi_siliguri_bold"
             tools:text="Thu, 30 Dec" />
+
     </LinearLayout>
 
     <!-- Home apps-->

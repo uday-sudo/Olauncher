@@ -1347,7 +1347,7 @@
                 android:gravity="center"
                 android:letterSpacing="0.02"
                 android:padding="10dp"
-                android:text="@string/olauncher_pro" />
+                android:text="@string/support_me" />
 
         </LinearLayout>
 

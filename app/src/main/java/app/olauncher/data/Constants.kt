@@ -93,15 +93,15 @@ object Constants {
 
     const val LONG_PRESS_DELAY_MS = 500L
 
-    const val URL_ABOUT_OLAUNCHER = "https://tanujnotes.notion.site/Olauncher-Minimal-AF-4843e398b05a455bb521b0665b26fbcd"
-    const val URL_OLAUNCHER_PRIVACY = "https://tanujnotes.notion.site/Olauncher-Privacy-Policy-dd6ac5101ddd4b3da9d27057889d44ab"
-    const val URL_DOUBLE_TAP = "https://tanujnotes.notion.site/Double-tap-to-lock-Olauncher-0f7fb103ec1f47d7a90cdfdcd7fb86ef"
+    const val URL_ABOUT_OLAUNCHER = "https://gist.github.com/uday-sudo/d30fc6de6d60ebc2891846e798c6f153"
+    const val URL_OLAUNCHER_PRIVACY = "https://gist.github.com/uday-sudo/992a8969d63059163838f374e915a6ce"
+    const val URL_DOUBLE_TAP = "https://gist.github.com/uday-sudo/f4193d6a08f6ec0519f5d6c13ff3777c"
     const val URL_OLAUNCHER_GITHUB = "https://www.github.com/uday-sudo/Olauncher"
-    const val URL_OLAUNCHER_PLAY_STORE = "https://play.google.com/store/apps/details?id=app.olauncher"
-    const val URL_PLAY_STORE_DEV = "https://play.google.com/store/apps/dev?id=7198807840081074933"
+    const val URL_OLAUNCHER_PLAY_STORE = "No avaiable yet" //"https://play.google.com/store/apps/details?id=app.olauncher"
+    //const val URL_PLAY_STORE_DEV = "https://play.google.com/store/apps/dev?id=7198807840081074933"
     const val URL_BMAC = "https://www.buymeacoffee.com/uday101"
-    const val URL_TWITTER_TANUJ = "https://twitter.com/tanujnotes"
-    const val URL_WALLPAPERS = "https://gist.githubusercontent.com/tanujnotes/bf400a269746c5c124a599af040dd82e/raw"
+    const val URL_GITHUB_UDAY = "https://github.com/uday-sudo"
+    const val URL_WALLPAPERS = "https://gist.github.com/uday-sudo/33ace778e5152462a3468915db75dd38/raw"
     const val URL_DEFAULT_DARK_WALLPAPER = "https://images.unsplash.com/photo-1512551980832-13df02babc9e"
     const val URL_DEFAULT_LIGHT_WALLPAPER = "https://images.unsplash.com/photo-1515549832467-8783363e19b6"
     const val URL_DUCK_SEARCH = "https://duck.co/?q="
