@@ -102,6 +102,8 @@ class Prefs(context: Context) {
     private val ICON_USER_7 = "ICON_USER_7"
     private val ICON_USER_8 = "ICON_USER_8"
 
+    private val FONT_NAME = "FONT_NAME"
+
     private val APP_NAME_SWIPE_LEFT = "APP_NAME_SWIPE_LEFT"
     private val APP_NAME_SWIPE_RIGHT = "APP_NAME_SWIPE_RIGHT"
     private val APP_PACKAGE_SWIPE_LEFT = "APP_PACKAGE_SWIPE_LEFT"
@@ -164,7 +166,7 @@ class Prefs(context: Context) {
         set(value) = prefs.edit().putInt(HOME_ALIGNMENT, value).apply()
 
     var homeBottomAlignment: Boolean
-        get() = prefs.getBoolean(HOME_BOTTOM_ALIGNMENT, true)
+        get() = prefs.getBoolean(HOME_BOTTOM_ALIGNMENT, false)
         set(value) = prefs.edit().putBoolean(HOME_BOTTOM_ALIGNMENT, value).apply()
 
     var appLabelAlignment: Int
@@ -479,6 +481,9 @@ class Prefs(context: Context) {
         get() = prefs.getString(ICON_USER_8, "").toString()
         set(value) = prefs.edit().putString(ICON_USER_8, value).apply()
 
+    var fontName: String
+        get() = prefs.getString(FONT_NAME, "roboto_regular").toString()
+        set(value) = prefs.edit().putString(ICON_USER_8, value).apply()
 
     var appNameSwipeLeft: String
         get() = prefs.getString(APP_NAME_SWIPE_LEFT, "Camera").toString()

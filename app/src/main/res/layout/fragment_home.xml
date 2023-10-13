@@ -32,7 +32,7 @@
             style="@style/TextDefault"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/hindi_siliguri_bold"
+            android:fontFamily="@font/roboto_regular"
             android:format12Hour="hh:mm"
             android:textSize="@dimen/time_size"
             tools:text="02:34" />
