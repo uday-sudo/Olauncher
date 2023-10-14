@@ -60,6 +60,7 @@ class HomeFragment : Fragment(), View.OnClickListener, View.OnLongClickListener 
         setHomeAlignment(prefs.homeAlignment)
         initSwipeTouchListener()
         initClickListeners()
+        setFonts()
         populateIcons()
         //Log.d("check",prefs.iconPackage1)
     }
@@ -221,14 +222,6 @@ class HomeFragment : Fragment(), View.OnClickListener, View.OnLongClickListener 
         binding.homeApp8.gravity = horizontalGravity
 
         binding.homeIconsLayout.gravity = horizontalGravityIcons or verticalGravity
-        //binding.IconApp1.gravity = horizontalGravityIcons
-        //binding.IconApp2.gravity = horizontalGravityIcons
-        //binding.IconApp3.gravity = horizontalGravityIcons
-        //binding.IconApp4.gravity = horizontalGravityIcons
-        //binding.IconApp5.gravity = horizontalGravityIcons
-        //binding.IconApp6.gravity = horizontalGravityIcons
-        //binding.IconApp7.gravity = horizontalGravityIcons
-        //binding.IconApp8.gravity = horizontalGravityIcons
     }
 
     private fun populateDateTime() {
@@ -262,17 +255,33 @@ class HomeFragment : Fragment(), View.OnClickListener, View.OnLongClickListener 
 
     private fun returnDrawable(iconName: String): Drawable? {
         return when (iconName) {
-            Constants.IC_CAMERA -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_camera) }
-            Constants.IC_CIRCLE -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_circle) }
-            Constants.IC_GALLERY -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_gallery) }
-            Constants.IC_MAIL -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_mail) }
-            Constants.IC_MESSAGE -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_message) }
-            Constants.IC_MUSIC -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_music) }
-            Constants.IC_PHONE -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_phone) }
-            Constants.IC_SEARCH -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_search) }
-            Constants.IC_WEB -> context?.let { ContextCompat.getDrawable(it, R.drawable.ic_web) }
-            else -> {context?.let { ContextCompat.getDrawable(it, R.drawable.ic_web) }}
+            Constants.IC_CAMERA -> ContextCompat.getDrawable(requireContext(), R.drawable.ic_camera)
+            Constants.IC_CIRCLE -> ContextCompat.getDrawable(requireContext(), R.drawable.ic_circle)
+            Constants.IC_GALLERY -> ContextCompat.getDrawable(requireContext(), R.drawable.ic_gallery)
+            Constants.IC_MAIL -> ContextCompat.getDrawable(requireContext(), R.drawable.ic_mail)
+            Constants.IC_MESSAGE -> ContextCompat.getDrawable(requireContext(), R.drawable.ic_message)
+            Constants.IC_MUSIC -> ContextCompat.getDrawable(requireContext(), R.drawable.ic_music)
+            Constants.IC_PHONE -> ContextCompat.getDrawable(requireContext(), R.drawable.ic_phone)
+            Constants.IC_SEARCH -> ContextCompat.getDrawable(requireContext(), R.drawable.ic_search)
+            Constants.IC_WEB -> ContextCompat.getDrawable(requireContext(), R.drawable.ic_web)
+            else -> ContextCompat.getDrawable(requireContext(), R.drawable.ic_web)
         }
+    }
+
+    private fun setFonts() {
+        binding.clock.typeface = returnTypeface(prefs.fontClockName, requireContext())
+        binding.date.typeface = returnTypeface(prefs.fontClockName, requireContext())
+
+        binding.homeApp1.typeface = returnTypeface(prefs.fontName, requireContext())
+        binding.homeApp2.typeface = returnTypeface(prefs.fontName, requireContext())
+        binding.homeApp3.typeface = returnTypeface(prefs.fontName, requireContext())
+        binding.homeApp4.typeface = returnTypeface(prefs.fontName, requireContext())
+        binding.homeApp5.typeface = returnTypeface(prefs.fontName, requireContext())
+        binding.homeApp6.typeface = returnTypeface(prefs.fontName, requireContext())
+        binding.homeApp7.typeface = returnTypeface(prefs.fontName, requireContext())
+        binding.homeApp8.typeface = returnTypeface(prefs.fontName, requireContext())
+
+        binding.setDefaultLauncher.typeface = returnTypeface(prefs.fontName, requireContext())
     }
 
     private fun populateIconApps() {

@@ -43,6 +43,20 @@ object Constants {
         const val SEVEN = 1.3f
     }
 
+    object Font {
+        const val font1 = "blackopsone"
+        const val font2 = "caveat"
+        const val font3 = "dancingscript"
+        const val font4 = "heebo"
+        const val font5 = "hindisiliguri"
+        const val font6 = "lobster"
+        const val font7 = "pacifico"
+        const val font8 = "pixelifysans"
+        const val font9 = "questrial"
+        const val font10 = "roboto"
+        const val font11 = "yujihentaiganaakari"
+    }
+
     const val WALL_TYPE_LIGHT = "light"
     const val WALL_TYPE_DARK = "dark"
 

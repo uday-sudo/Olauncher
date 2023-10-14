@@ -42,8 +42,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     val launcherResetFailed = MutableLiveData<Boolean>()
     val homeAppAlignment = MutableLiveData<Int>()
     val showDialog = SingleLiveEvent<String>()
+
     val iconNameString = MutableLiveData<String>()
     val iconNum = MutableLiveData<Int>()
+    val flagIsClockFont = MutableLiveData<Boolean>()
 
     fun selectedApp(appModel: AppModel, flag: Int) {
         when (flag) {

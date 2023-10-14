@@ -103,6 +103,7 @@ class Prefs(context: Context) {
     private val ICON_USER_8 = "ICON_USER_8"
 
     private val FONT_NAME = "FONT_NAME"
+    private val FONT_CLOCK_NAME = "FONT_CLOCK_NAME"
 
     private val APP_NAME_SWIPE_LEFT = "APP_NAME_SWIPE_LEFT"
     private val APP_NAME_SWIPE_RIGHT = "APP_NAME_SWIPE_RIGHT"
@@ -481,9 +482,13 @@ class Prefs(context: Context) {
         get() = prefs.getString(ICON_USER_8, "").toString()
         set(value) = prefs.edit().putString(ICON_USER_8, value).apply()
 
+    var fontClockName: String
+        get() = prefs.getString(FONT_CLOCK_NAME, "hindisiliguri").toString()
+        set(value) = prefs.edit().putString(FONT_CLOCK_NAME, value).apply()
+
     var fontName: String
-        get() = prefs.getString(FONT_NAME, "roboto_regular").toString()
-        set(value) = prefs.edit().putString(ICON_USER_8, value).apply()
+        get() = prefs.getString(FONT_NAME, "roboto").toString()
+        set(value) = prefs.edit().putString(FONT_NAME, value).apply()
 
     var appNameSwipeLeft: String
         get() = prefs.getString(APP_NAME_SWIPE_LEFT, "Camera").toString()

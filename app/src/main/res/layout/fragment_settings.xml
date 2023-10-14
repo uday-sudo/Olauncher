@@ -834,6 +834,46 @@
 
                 </FrameLayout>
 
+                <TextView
+                    style="@style/TextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:paddingVertical="8dp"
+                    android:text="Clock Font"
+                    android:textColor="?attr/primaryColor" />
+
+                <TextView
+                    android:id="@+id/clockFont"
+                    style="@style/TextLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="4dp"
+                    android:paddingVertical="8dp"
+                    android:textColor="?attr/primaryColor"
+                    android:text="asdf"/>
+
+                <TextView
+                    style="@style/TextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:paddingVertical="8dp"
+                    android:text="Launcher Font"
+                    android:textColor="?attr/primaryColor" />
+
+                <TextView
+                    android:id="@+id/font"
+                    style="@style/TextLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="4dp"
+                    android:paddingVertical="8dp"
+                    android:textColor="?attr/primaryColor"
+                    android:text="asdf" />
+
             </LinearLayout>
 
             <LinearLayout
