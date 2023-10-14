@@ -355,35 +355,35 @@ class Prefs(context: Context) {
         set(value) = prefs.edit().putString(APP_USER_8, value).apply()
 
     var iconName1: String
-        get() = prefs.getString(ICON_NAME_1, "").toString()
+        get() = prefs.getString(ICON_NAME_1, "ic_circle").toString()
         set(value) = prefs.edit().putString(ICON_NAME_1, value).apply()
 
     var iconName2: String
-        get() = prefs.getString(ICON_NAME_2, "").toString()
+        get() = prefs.getString(ICON_NAME_2, "ic_circle").toString()
         set(value) = prefs.edit().putString(ICON_NAME_2, value).apply()
 
     var iconName3: String
-        get() = prefs.getString(ICON_NAME_3, "").toString()
+        get() = prefs.getString(ICON_NAME_3, "ic_circle").toString()
         set(value) = prefs.edit().putString(ICON_NAME_3, value).apply()
 
     var iconName4: String
-        get() = prefs.getString(ICON_NAME_4, "").toString()
+        get() = prefs.getString(ICON_NAME_4, "ic_circle").toString()
         set(value) = prefs.edit().putString(ICON_NAME_4, value).apply()
 
     var iconName5: String
-        get() = prefs.getString(ICON_NAME_5, "").toString()
+        get() = prefs.getString(ICON_NAME_5, "ic_circle").toString()
         set(value) = prefs.edit().putString(ICON_NAME_5, value).apply()
 
     var iconName6: String
-        get() = prefs.getString(ICON_NAME_6, "").toString()
+        get() = prefs.getString(ICON_NAME_6, "ic_circle").toString()
         set(value) = prefs.edit().putString(ICON_NAME_6, value).apply()
 
     var iconName7: String
-        get() = prefs.getString(ICON_NAME_7, "").toString()
+        get() = prefs.getString(ICON_NAME_7, "ic_circle").toString()
         set(value) = prefs.edit().putString(ICON_NAME_7, value).apply()
 
     var iconName8: String
-        get() = prefs.getString(ICON_NAME_8, "").toString()
+        get() = prefs.getString(ICON_NAME_8, "ic_circle").toString()
         set(value) = prefs.edit().putString(ICON_NAME_8, value).apply()
 
     var iconPackage1: String

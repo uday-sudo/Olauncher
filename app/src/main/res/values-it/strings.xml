@@ -119,8 +119,7 @@
     <string name="adapter_show">mostra</string>
     <string name="adapter_hide">nascondi</string>
     <string name="are_you_using_your_phone_or_is_your_phone_using_you">Stai usando il tuo telefono, o è il tuo telefono che sta usando te?</string>
-    <string name="about_olauncher">Info Olauncher</string>
-    <string name="are_you_using_your_phone_or_is_your_phone_using_you">Stai usando il tuo telefono o è il tuo telefono che sta usando te?</string>
+    <string name="about_olauncher">Info Plauncher</string>
     <string name="icons_on_home_screen">Icone sulla schermata iniziale</string>
     <string name="choose_icons">Scegli l\'icona</string>
     <string name="support_me">Supportami!!</string>

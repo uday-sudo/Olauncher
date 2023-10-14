@@ -453,7 +453,7 @@ class HomeFragment : Fragment(), View.OnClickListener, View.OnLongClickListener 
     }
 
     private fun homeAppClicked(location: Int) {
-        if (prefs.getAppName(location).isEmpty()) showLongPressToast()
+        if (prefs.getAppPackage(location).isEmpty()) showLongPressToast()
         else {
             launchApp(
                 prefs.getAppName(location),

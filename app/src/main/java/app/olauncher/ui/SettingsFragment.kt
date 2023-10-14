@@ -179,7 +179,7 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
             R.id.font -> updateFont(false)
             R.id.clockFont -> updateFont(true)
 
-            R.id.about -> {
+            R.id.aboutOlauncher -> {
                 prefs.aboutClicked = true
                 requireContext().openUrl(Constants.URL_ABOUT_OLAUNCHER)
             }
@@ -190,12 +190,9 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
                 requireActivity().rateApp()
             }
 
-<<<<<<< HEAD
-            R.id.twitter -> requireContext().openUrl(Constants.URL_TWITTER_TANUJ)
             R.id.github -> requireContext().openUrl(Constants.URL_OLAUNCHER_GITHUB)
-=======
             R.id.twitter -> requireContext().openUrl(Constants.URL_GITHUB_UDAY)
->>>>>>> Dev
+            R.id.github -> requireContext().openUrl(Constants.URL_OLAUNCHER_GITHUB)
             R.id.privacy -> requireContext().openUrl(Constants.URL_OLAUNCHER_PRIVACY)
             R.id.footer -> requireContext().openUrl(Constants.URL_BMAC)
         }

@@ -12,7 +12,7 @@
     <string name="long_press_to_enable">长按即可启用</string>
     <string name="no_hidden_apps">没有隐藏的应用程序</string>
     <string name="hidden_apps">隐藏的应用程序</string>
-    <string name="hidden_apps_message">注意：点击此设置页面顶部的“Olauncher”即可找到隐藏的应用程序。
+    <string name="hidden_apps_message">注意：点击此设置页面顶部的“Plauncher”即可找到隐藏的应用程序。
         \n\n更多详细信息请参阅下面的“关于”页面。</string>
     <string name="swipe_down_for">向下滑动查看</string>
     <string name="search">搜索</string>
@@ -119,11 +119,8 @@
     <string name="swipe_left_app_disabled">向左滑动应用程序已禁用</string>
     <string name="swipe_right_app_disabled">向右滑动应用程序已禁用</string>
     <string name="are_you_using_your_phone_or_is_your_phone_using_you">是你在用手机，还是手机在用你？</string>
-<<<<<<< HEAD
-    <string name="about_olauncher">关于 Olauncher</string>
-=======
+    <string name="about_olauncher">关于 Plauncher</string>
     <string name="icons_on_home_screen">主屏幕上的图标</string>
     <string name="choose_icons">选择图标</string>
     <string name="support_me">支持我！！</string>
->>>>>>> Dev
 </resources>

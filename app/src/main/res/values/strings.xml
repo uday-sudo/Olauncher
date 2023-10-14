@@ -29,7 +29,7 @@
 
     <string name="app">App</string>
     <string name="set_as_default_launcher">Set as default launcher</string>
-    <string name="set_as_default_launcher_first">Set Olauncher default first</string>
+    <string name="set_as_default_launcher_first">Set Plauncher default first</string>
     <string name="app_text_color">Text color</string>
     <string name="double_tap_to_lock_screen">Double tap to lock</string>
     <string name="admin_permission_message">Plauncher promises to use lock screen permission responsibly. Plauncher does not collect or share any data.</string>
@@ -148,7 +148,7 @@
     <string name="adapter_show">Show</string>
     <string name="adapter_hide">Hide</string>
     <string name="are_you_using_your_phone_or_is_your_phone_using_you">Are you using your phone, or is your phone using you?</string>
-    <string name="about_olauncher">About Olauncher</string>
+    <string name="about_olauncher">About Plauncher</string>
     <string name="title_activity_widget_page">WidgetPage</string>
     <!-- Strings used for fragments for navigation -->
     <string name="next">Next</string>

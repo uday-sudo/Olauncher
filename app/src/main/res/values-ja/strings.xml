@@ -22,7 +22,7 @@
     <string name="long_press_to_enable">長押しして有効にします</string>
     <string name="no_hidden_apps">隠れたアプリはありません</string>
     <string name="hidden_apps">隠しアプリ</string>
-    <string name="hidden_apps_message">注: この設定ページの上部にある「Olauncher」をタップして、隠れたアプリを見つけます。
+    <string name="hidden_apps_message">注: この設定ページの上部にある「Plauncher」をタップして、隠れたアプリを見つけます。
         \n\n詳細については、以下の About ページをご覧ください。</string>
     <string name="swipe_down_for">下にスワイプして</string>
     <string name="search">検索</string>
@@ -117,11 +117,8 @@
     <string name="swipe_left_app_disabled">左にスワイプするとアプリが無効になります</string>
     <string name="swipe_right_app_disabled">アプリを右にスワイプすると無効になります</string>
     <string name="are_you_using_your_phone_or_is_your_phone_using_you">あなたは電話を使っていますか、それともあなたの電話があなたを使っていますか？</string>
-<<<<<<< HEAD
-    <string name="about_olauncher">アバウト Olauncher</string>
-=======
+    <string name="about_olauncher">アバウト Plauncher</string>
     <string name="icons_on_home_screen">ホーム画面のアイコン</string>
     <string name="choose_icons">アイコンを選択</string>
     <string name="support_me">サポートミー!!</string>
->>>>>>> Dev
 </resources>

@@ -21,7 +21,7 @@
     <string name="long_press_to_enable">Naciśnij długo, aby włączyć</string>
     <string name="no_hidden_apps">Brak ukrytych aplikacji</string>
     <string name="hidden_apps">Ukrytych aplikacji</string>
-    <string name="hidden_apps_message">Uwaga: Stuknij w „Olauncher” u góry tej strony ustawień, aby znaleźć ukryte aplikacje.
+    <string name="hidden_apps_message">Uwaga: Stuknij w „Plauncher” u góry tej strony ustawień, aby znaleźć ukryte aplikacje.
         \n\nWięcej informacji znajduje się na stronie Informacje poniżej.</string>
     <string name="swipe_down_for">Przesuń w dół, aby</string>
     <string name="search">Szukaj</string>
@@ -50,17 +50,10 @@
     <string name="adapter_hide">Ukryj</string>
     <string name="app_text_color">Kolor tekstu</string>
     <string name="double_tap_to_lock_screen">Kliknij dwukrotnie, aby zablokować</string>
-<<<<<<< HEAD
-    <string name="admin_permission_message">Olauncher obiecuje odpowiedzialnie korzystać z uprawnień blokady ekranu. Olauncher nie gromadzi ani nie udostępnia żadnych danych.</string>
+    <string name="admin_permission_message">Plauncher obiecuje odpowiedzialnie korzystać z uprawnień blokady ekranu. Plauncher nie gromadzi ani nie udostępnia żadnych danych.</string>
     <string name="about">Informacje</string>
     <string name="off">Nie</string>
     <string name="on">Tak</string>
-=======
-    <string name="admin_permission_message">Plauncher obiecuje odpowiedzialnie korzystać z uprawnień blokady ekranu. Plauncher nie gromadzi ani nie udostępnia żadnych danych.</string>
-    <string name="about">O</string>
-    <string name="off">Wyłączony</string>
-    <string name="on">NA</string>
->>>>>>> Dev
     <string name="black">Czarny</string>
     <string name="white">Biały</string>
     <string name="change_default_launcher">Zmień domyślny program uruchamiający</string>
@@ -123,11 +116,8 @@
     <string name="swipe_left_app_disabled">Gest Przesuń w lewo wyłączony</string>
     <string name="swipe_right_app_disabled">Gest Przesuń w prawo jest wyłączony</string>
     <string name="are_you_using_your_phone_or_is_your_phone_using_you">Czy używasz telefonu, czy telefon używa ciebie?</string>
-<<<<<<< HEAD
-    <string name="about_olauncher">O Olauncher</string>
-=======
+    <string name="about_olauncher">O Plauncher</string>
     <string name="icons_on_home_screen">Ikony na ekranie głównym</string>
     <string name="choose_icons">Wybierz ikonę</string>
     <string name="support_me">Wesprzyj mnie!!</string>
->>>>>>> Dev
 </resources>

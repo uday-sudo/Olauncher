@@ -69,17 +69,6 @@ class AppDrawerFragment : Fragment() {
         binding.search.findViewById<TextView>(R.id.search_src_text).typeface = font
         binding.appRename.typeface = font
         binding.appDrawerTip.typeface = font
-
-        /*
-        Log.d("uday", layout.childCount.toString() + " childs in appdrawer")
-
-        for (i in 0 until layout.childCount) {
-            val view: View = layout.getChildAt(i)
-            if (view is TextView) {
-                view.typeface = font
-            }
-        }*/
-
     }
 
     private fun initViews() {
