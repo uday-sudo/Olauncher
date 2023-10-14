@@ -9,9 +9,9 @@
         android:name="android.permission.QUERY_ALL_PACKAGES"
         tools:ignore="QueryAllPackagesPermission" />
     <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
-    <!--Used only for downloading wallpapers-->
+    <!-- Used only for downloading wallpapers -->
     <uses-permission android:name="android.permission.INTERNET" />
-    <!--Used only for opening alarm app-->
+    <!-- Used only for opening alarm app -->
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
 
     <application
@@ -42,7 +42,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".helper.FakeHomeActivity"
             android:enabled="false"
@@ -65,6 +64,7 @@
             <meta-data
                 android:name="android.app.device_admin"
                 android:resource="@xml/policies" />
+
             <intent-filter>
                 <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
             </intent-filter>
@@ -79,11 +79,11 @@
             <meta-data
                 android:name="android.accessibilityservice"
                 android:resource="@xml/accessibility_service_config" />
+
             <intent-filter>
                 <action android:name="android.accessibilityservice.AccessibilityService" />
             </intent-filter>
         </service>
-
     </application>
 
 </manifest>

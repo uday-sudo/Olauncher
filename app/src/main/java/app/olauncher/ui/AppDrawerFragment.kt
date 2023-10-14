@@ -1,12 +1,15 @@
 package app.olauncher.ui
 
+import android.graphics.Typeface
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import android.widget.TextView
 import androidx.appcompat.widget.SearchView
+import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -21,6 +24,7 @@ import app.olauncher.helper.isSystemApp
 import app.olauncher.helper.openAppInfo
 import app.olauncher.helper.openSearch
 import app.olauncher.helper.openUrl
+import app.olauncher.helper.returnTypeface
 import app.olauncher.helper.showKeyboard
 import app.olauncher.helper.showToast
 import app.olauncher.helper.uninstall
@@ -29,6 +33,7 @@ class AppDrawerFragment : Fragment() {
 
     private lateinit var prefs: Prefs
     private lateinit var adapter: AppDrawerAdapter
+    private lateinit var font: Typeface
 
     private var flag = Constants.FLAG_LAUNCH_APP
     private var canRename = false
@@ -49,11 +54,32 @@ class AppDrawerFragment : Fragment() {
             flag = it.getInt(Constants.Key.FLAG, Constants.FLAG_LAUNCH_APP)
             canRename = it.getBoolean(Constants.Key.RENAME, false)
         }
+        font = returnTypeface(prefs.fontName, requireContext())
         initViews()
         initSearch()
         initAdapter()
         initObservers()
         initClickListeners()
+        setFonts()
+    }
+
+    private fun setFonts() {
+        val layout = binding.recyclerView
+
+        binding.search.findViewById<TextView>(R.id.search_src_text).typeface = font
+        binding.appRename.typeface = font
+        binding.appDrawerTip.typeface = font
+
+        /*
+        Log.d("uday", layout.childCount.toString() + " childs in appdrawer")
+
+        for (i in 0 until layout.childCount) {
+            val view: View = layout.getChildAt(i)
+            if (view is TextView) {
+                view.typeface = font
+            }
+        }*/
+
     }
 
     private fun initViews() {
@@ -97,6 +123,7 @@ class AppDrawerFragment : Fragment() {
 
     private fun initAdapter() {
         adapter = AppDrawerAdapter(
+            font,
             flag,
             prefs.appLabelAlignment,
             appClickListener = {

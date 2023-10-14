@@ -28,4 +28,6 @@
     <color name="blackInverseTrans80">#CCFFFFFF</color>
     <color name="blackInverseTrans90">#E6FFFFFF</color>
 
+    <color name="searchViewQuery">#8C8C8C</color>
+
 </resources>

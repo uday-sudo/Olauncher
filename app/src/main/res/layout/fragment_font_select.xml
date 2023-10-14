@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainActivityLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="?attr/primaryColorInverseTrans50"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:fadingEdgeLength="48dp"
+        android:overScrollMode="never"
+        android:requiresFadingEdge="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="12dp"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/textText"
+                style="@style/TextLarge"
+                android:background="@drawable/rounded_corner_bg"
+                android:layout_width="match_parent"
+                android:paddingStart="20sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/choose_an_font"
+                android:textColor="?attr/primaryColor" />
+
+            <TextView
+                android:id="@+id/font1"
+                style="@style/TextLarge"
+                android:text="BlackOpsOne regular"
+                android:fontFamily="@font/blackopsone_regular"
+                android:textColor="?attr/primaryColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/home_app_padding_vertical"
+                android:tag="@string/tag_1"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/font2"
+                style="@style/TextLarge"
+                android:text="Caveat regular"
+                android:fontFamily="@font/caveat_regular"
+                android:textColor="?attr/primaryColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/home_app_padding_vertical"
+                android:tag="@string/tag_1"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/font3"
+                style="@style/TextLarge"
+                android:text="Dancing Script regular"
+                android:fontFamily="@font/dancingscript_regular"
+                android:textColor="?attr/primaryColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/home_app_padding_vertical"
+                android:tag="@string/tag_1"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/font4"
+                style="@style/TextLarge"
+                android:text="Heebo regular"
+                android:fontFamily="@font/heebo_regular"
+                android:textColor="?attr/primaryColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/home_app_padding_vertical"
+                android:tag="@string/tag_1"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/font5"
+                style="@style/TextLarge"
+                android:text="HindiSiliguri Bold"
+                android:fontFamily="@font/hindi_siliguri_bold"
+                android:textColor="?attr/primaryColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/home_app_padding_vertical"
+                android:tag="@string/tag_1"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/font6"
+                style="@style/TextLarge"
+                android:text="Lobster regular"
+                android:fontFamily="@font/lobster_regular"
+                android:textColor="?attr/primaryColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/home_app_padding_vertical"
+                android:tag="@string/tag_1"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/font7"
+                style="@style/TextLarge"
+                android:text="Pacifico regular"
+                android:fontFamily="@font/pacifico_regular"
+                android:textColor="?attr/primaryColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/home_app_padding_vertical"
+                android:tag="@string/tag_1"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/font8"
+                style="@style/TextLarge"
+                android:text="PixelifySans regular"
+                android:fontFamily="@font/pixelifysans_regular"
+                android:textColor="?attr/primaryColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/home_app_padding_vertical"
+                android:tag="@string/tag_1"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/font9"
+                style="@style/TextLarge"
+                android:text="Questrial regular"
+                android:fontFamily="@font/questrial_regular"
+                android:textColor="?attr/primaryColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/home_app_padding_vertical"
+                android:tag="@string/tag_1"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/font10"
+                style="@style/TextLarge"
+                android:text="Roboto regular"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="?attr/primaryColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/home_app_padding_vertical"
+                android:tag="@string/tag_1"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/font11"
+                style="@style/TextLarge"
+                android:text="Yuji HentaiGanaAkari regular"
+                android:fontFamily="@font/yujihentaiganaakari_regular"
+                android:textColor="?attr/primaryColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/home_app_padding_vertical"
+                android:tag="@string/tag_1"
+                tools:visibility="visible" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

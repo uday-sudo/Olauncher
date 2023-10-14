@@ -19,6 +19,7 @@ import android.graphics.Canvas
 import android.graphics.Matrix
 import android.graphics.Paint
 import android.graphics.Point
+import android.graphics.Typeface
 import android.net.Uri
 import android.os.Build
 import android.os.UserHandle
@@ -37,6 +38,7 @@ import android.widget.Toast
 import androidx.annotation.AttrRes
 import androidx.annotation.ColorInt
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.content.res.ResourcesCompat
 import app.olauncher.BuildConfig
 import app.olauncher.R
 import app.olauncher.data.AppModel
@@ -531,4 +533,21 @@ fun Context.rateApp() {
     flags = flags or Intent.FLAG_ACTIVITY_NEW_DOCUMENT
     intent.addFlags(flags)
     startActivity(intent)
+}
+
+fun returnTypeface(fontName: String, context: Context): Typeface {
+    return when (fontName) {
+        Constants.Font.font1 -> ResourcesCompat.getFont(context, R.font.blackopsone_regular)
+        Constants.Font.font2 -> ResourcesCompat.getFont(context, R.font.caveat_regular)
+        Constants.Font.font3 -> ResourcesCompat.getFont(context, R.font.dancingscript_regular)
+        Constants.Font.font4 -> ResourcesCompat.getFont(context, R.font.heebo_regular)
+        Constants.Font.font5 -> ResourcesCompat.getFont(context, R.font.hindi_siliguri_bold)
+        Constants.Font.font6 -> ResourcesCompat.getFont(context, R.font.lobster_regular)
+        Constants.Font.font7 -> ResourcesCompat.getFont(context, R.font.pacifico_regular)
+        Constants.Font.font8 -> ResourcesCompat.getFont(context, R.font.pixelifysans_regular)
+        Constants.Font.font9 -> ResourcesCompat.getFont(context, R.font.questrial_regular)
+        Constants.Font.font10 -> ResourcesCompat.getFont(context, R.font.roboto_regular)
+        Constants.Font.font11 -> ResourcesCompat.getFont(context, R.font.yujihentaiganaakari_regular)
+        else -> ResourcesCompat.getFont(context, R.font.roboto_regular)
+    } ?: throw IllegalArgumentException("Invalid fontName: $fontName")
 }

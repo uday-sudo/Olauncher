@@ -17,7 +17,7 @@
     <string name="cool">Fajny!</string>
     <string name="tip_start_typing_for_rename">Wskazówka: zacznij pisać by zmienić nazwę aplikacji</string>
     <string name="your_wallpaper_will_update_shortly">Twoja tapeta zostanie wkrótce zaktualizowana</string>
-    <string name="olauncher_is_not_default_launcher">Olauncher nie jest domyślnym programem uruchamiającym. Codzienna aktualizacja tapety może się nie powieść.</string>
+    <string name="olauncher_is_not_default_launcher">Plauncher nie jest domyślnym programem uruchamiającym. Codzienna aktualizacja tapety może się nie powieść.</string>
     <string name="long_press_to_enable">Naciśnij długo, aby włączyć</string>
     <string name="no_hidden_apps">Brak ukrytych aplikacji</string>
     <string name="hidden_apps">Ukrytych aplikacji</string>
@@ -26,7 +26,7 @@
     <string name="swipe_down_for">Przesuń w dół, aby</string>
     <string name="search">Szukaj</string>
     <string name="notifications">Powiadomienia</string>
-    <string name="accessibility_disclosure">Włącz lub wyłącz usługę ułatwień dostępu Olauncher w ustawieniach swojego urządzenia, aby włączyć lub wyłączyć tę funkcję.
+    <string name="accessibility_disclosure">Włącz lub wyłącz usługę ułatwień dostępu Plauncher w ustawieniach swojego urządzenia, aby włączyć lub wyłączyć tę funkcję.
         \n\nNależy pamiętać, że ta usługa służy wyłącznie do wyłączania ekranu urządzenia za pomocą gestu dwukrotnego dotknięcia. Nasza usługa ułatwień dostępu nie gromadzi ani nie udostępnia żadnych danych.</string>
     <string name="accept">Akceptuj</string>
     <string name="permission">Uprawnienie</string>
@@ -40,7 +40,7 @@
     <string name="enabled">Włączony</string>
     <string name="disabled">Wyłączony</string>
     <string name="please_turn_on_double_tap_to_unlock">Włącz podwójne dotknięcie, aby zablokować</string>
-    <string name="launcher_failed_to_lock_device">Olauncherowi nie udało się zablokować urządzenia. Sprawdź ustawienia aplikacji.</string>
+    <string name="launcher_failed_to_lock_device">Plauncherowi nie udało się zablokować urządzenia. Sprawdź ustawienia aplikacji.</string>
     <string name="long_press_to_select_app">Naciśnij długo, aby wybrać aplikację</string>
     <string name="unable_to_open_app">Nie można otworzyć informacji o aplikacji</string>
     <string name="copied">Skopiowane</string>
@@ -50,10 +50,17 @@
     <string name="adapter_hide">Ukryj</string>
     <string name="app_text_color">Kolor tekstu</string>
     <string name="double_tap_to_lock_screen">Kliknij dwukrotnie, aby zablokować</string>
+<<<<<<< HEAD
     <string name="admin_permission_message">Olauncher obiecuje odpowiedzialnie korzystać z uprawnień blokady ekranu. Olauncher nie gromadzi ani nie udostępnia żadnych danych.</string>
     <string name="about">Informacje</string>
     <string name="off">Nie</string>
     <string name="on">Tak</string>
+=======
+    <string name="admin_permission_message">Plauncher obiecuje odpowiedzialnie korzystać z uprawnień blokady ekranu. Plauncher nie gromadzi ani nie udostępnia żadnych danych.</string>
+    <string name="about">O</string>
+    <string name="off">Wyłączony</string>
+    <string name="on">NA</string>
+>>>>>>> Dev
     <string name="black">Czarny</string>
     <string name="white">Biały</string>
     <string name="change_default_launcher">Zmień domyślny program uruchamiający</string>
@@ -81,23 +88,24 @@
     <string name="rename">Zmień nazwę</string>
     <string name="show_date_time">Pokaż datę i godzinę</string>
     <string name="appearance">Wygląd</string>
+    <string name="choose_an_icon">Wybierz ikonę</string>
     <string name="gestures">Gesty</string>
     <string name="theme_mode">Temat</string>
     <string name="system_default">System</string>
     <string name="dark">Ciemny</string>
     <string name="light">Jasny</string>
     <string name="welcome_to_olauncher_settings">Nasza strona Informacje na dole zawiera odpowiedzi na wszystkie Twoje pytania. Nie zapomnij. :)\n\nDziękuję.</string>
-    <string name="rate_us_message">Hej, czy uważasz, że Olauncher jest przydatny? Jeśli tak, ocena 5 gwiazdek to najlepszy sposób, aby nas wesprzeć.\n\nDziękuję i więcej tego nie zobaczysz.</string>
-    <string name="share_message">Cześć, myślisz, że Twoi znajomi pokochaliby Olaunchera tak samo jak Ty?\n\nUdostępnij aplikację i pomóż nam rozpowszechniać informacje. Dziękuję!</string>
-    <string name="keyboard_message">Cześć, klawiatura to najszybszy sposób znajdowania i uruchamiania aplikacji w Olauncher. Czy możemy poprosić o pozostawienie tego włączonego jeszcze przez kilka dni, a następnie podjęcie decyzji?\n\nWybór zawsze należy do Ciebie.</string>
-    <string name="accessibility_service_description">Uprawnienia dostępu są wymagane, aby włączyć podwójne dotknięcie, aby zablokować. Wszelkie dane pozyskane przez Olauncher za pośrednictwem tej usługi nie opuszczą Twojego urządzenia.</string>
-    <string name="support_olauncher_for_free">Wesprzyj Olauncher za darmo, korzystając z naszego linku afiliacyjnego Amazon.</string>
+    <string name="rate_us_message">Hej, czy uważasz, że Plauncher jest przydatny? Jeśli tak, ocena 5 gwiazdek to najlepszy sposób, aby nas wesprzeć.\n\nDziękuję i więcej tego nie zobaczysz.</string>
+    <string name="share_message">Cześć, myślisz, że Twoi znajomi pokochaliby Plaunchera tak samo jak Ty?\n\nUdostępnij aplikację i pomóż nam rozpowszechniać informacje. Dziękuję!</string>
+    <string name="keyboard_message">Cześć, klawiatura to najszybszy sposób znajdowania i uruchamiania aplikacji w Plauncher. Czy możemy poprosić o pozostawienie tego włączonego jeszcze przez kilka dni, a następnie podjęcie decyzji?\n\nWybór zawsze należy do Ciebie.</string>
+    <string name="accessibility_service_description">Uprawnienia dostępu są wymagane, aby włączyć podwójne dotknięcie, aby zablokować. Wszelkie dane pozyskane przez Plauncher za pośrednictwem tej usługi nie opuszczą Twojego urządzenia.</string>
+    <string name="support_olauncher_for_free">Wesprzyj Plauncher za darmo, korzystając z naszego linku afiliacyjnego Amazon.</string>
     <string name="support_olauncher_message">Za każdym razem, gdy kupujesz coś za pomocą naszego linku, otrzymujemy niewielką prowizję. Zapisz link i używaj go podczas zakupów online. Dziękuję!</string>
     <string name="open">Otwórz łącze</string>
     <string name="copy">Kopiuj</string>
     <string name="close">Zamknij</string>
     <string name="not_now">Nie teraz</string>
-    <string name="public_roadmap">Publiczna mapa drogowa Olauncher</string>
+    <string name="public_roadmap">Publiczna mapa drogowa Plauncher</string>
     <string name="instagram">Instagram</string>
     <string name="twitter">Twitter</string>
     <string name="roadmap">Mapa drogowa</string>
@@ -105,7 +113,7 @@
     <string name="date_only">Tylko data</string>
     <string name="bottom_on">Dół: włączony</string>
     <string name="bottom_off">Dół: wyłączone</string>
-    <string name="please_set_olauncher_as_default_first">Najpierw ustaw Olauncher jako domyślny program uruchamiający</string>
+    <string name="please_set_olauncher_as_default_first">Najpierw ustaw Plauncher jako domyślny program uruchamiający</string>
     <string name="affiliate">Przyłącz</string>
     <string name="app_not_found">Nie znaleziono aplikacji</string>
     <string name="unable_to_launch_app">Nie można uruchomić aplikacji</string>
@@ -115,5 +123,11 @@
     <string name="swipe_left_app_disabled">Gest Przesuń w lewo wyłączony</string>
     <string name="swipe_right_app_disabled">Gest Przesuń w prawo jest wyłączony</string>
     <string name="are_you_using_your_phone_or_is_your_phone_using_you">Czy używasz telefonu, czy telefon używa ciebie?</string>
+<<<<<<< HEAD
     <string name="about_olauncher">O Olauncher</string>
+=======
+    <string name="icons_on_home_screen">Ikony na ekranie głównym</string>
+    <string name="choose_icons">Wybierz ikonę</string>
+    <string name="support_me">Wesprzyj mnie!!</string>
+>>>>>>> Dev
 </resources>

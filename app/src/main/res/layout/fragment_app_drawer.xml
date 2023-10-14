@@ -15,6 +15,7 @@
 
         <androidx.appcompat.widget.SearchView
             android:id="@+id/search"
+            android:background="@drawable/rounded_corner_bg"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -26,8 +27,8 @@
             app:closeIcon="@null"
             app:iconifiedByDefault="false"
             app:queryBackground="@null"
-            app:queryHint="___"
-            app:searchIcon="@null"
+            app:queryHint="Search Apps"
+            app:searchIcon="@drawable/ic_search"
             app:theme="@style/AppSearchText" />
 
         <TextView

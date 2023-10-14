@@ -4,15 +4,20 @@ import android.app.admin.DevicePolicyManager
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
+import android.graphics.drawable.Drawable
 import android.os.Build
 import android.os.Bundle
 import android.provider.Settings
+import android.util.Log
 import android.view.*
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.content.ContextCompat
 import androidx.core.os.bundleOf
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import app.olauncher.BuildConfig
@@ -51,7 +56,26 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
         componentName = ComponentName(requireContext(), DeviceAdmin::class.java)
         checkAdminPermission()
 
+        viewModel.iconNameString.observe(viewLifecycleOwner, Observer {
+            //Log.d("uday",viewModel.iconNameString.value.toString()+viewModel.iconNum.value.toString())
+
+            when (viewModel.iconNum.value) {
+                1 -> prefs.iconName1 = viewModel.iconNameString.value.toString()
+                2 -> prefs.iconName2 = viewModel.iconNameString.value.toString()
+                3 -> prefs.iconName3 = viewModel.iconNameString.value.toString()
+                4 -> prefs.iconName4 = viewModel.iconNameString.value.toString()
+                5 -> prefs.iconName5 = viewModel.iconNameString.value.toString()
+                6 -> prefs.iconName6 = viewModel.iconNameString.value.toString()
+                7 -> prefs.iconName7 = viewModel.iconNameString.value.toString()
+                8 -> prefs.iconName8 = viewModel.iconNameString.value.toString()
+            }
+            //Log.d("uday",prefs.iconName4.toString())
+
+            populateIcons()
+        })
+
         binding.homeAppsNum.text = prefs.homeAppsNum.toString()
+        binding.homeIconsNum.text = prefs.homeIconsNum.toString()
         populateKeyboardText()
         populateLockSettings()
         populateWallpaperText()
@@ -65,6 +89,8 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
         populateActionHints()
         initClickListeners()
         initObservers()
+        populateIcons()
+        setFonts()
     }
 
     override fun onClick(view: View) {
@@ -83,11 +109,12 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
             R.id.toggleLock -> toggleLockMode()
             R.id.autoShowKeyboard -> toggleKeyboardText()
             R.id.homeAppsNum -> binding.appsNumSelectLayout.visibility = View.VISIBLE
+            R.id.homeIconsNum -> binding.iconsNumSelectLayout.visibility = View.VISIBLE
             R.id.dailyWallpaperUrl -> requireContext().openUrl(prefs.dailyWallpaperUrl)
             R.id.dailyWallpaper -> toggleDailyWallpaperUpdate()
             R.id.alignment -> binding.alignmentSelectLayout.visibility = View.VISIBLE
             R.id.alignmentLeft -> viewModel.updateHomeAlignment(Gravity.START)
-            R.id.alignmentCenter -> viewModel.updateHomeAlignment(Gravity.CENTER)
+            //R.id.alignmentCenter -> viewModel.updateHomeAlignment(Gravity.CENTER)
             R.id.alignmentRight -> viewModel.updateHomeAlignment(Gravity.END)
             R.id.alignmentBottom -> updateHomeBottomAlignment()
             R.id.statusBar -> toggleStatusBar()
@@ -116,6 +143,16 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
             R.id.maxApps7 -> updateHomeAppsNum(7)
             R.id.maxApps8 -> updateHomeAppsNum(8)
 
+            R.id.maxIcons0 -> updateHomeIconsNum(0)
+            R.id.maxIcons1 -> updateHomeIconsNum(1)
+            R.id.maxIcons2 -> updateHomeIconsNum(2)
+            R.id.maxIcons3 -> updateHomeIconsNum(3)
+            R.id.maxIcons4 -> updateHomeIconsNum(4)
+            R.id.maxIcons5 -> updateHomeIconsNum(5)
+            R.id.maxIcons6 -> updateHomeIconsNum(6)
+            R.id.maxIcons7 -> updateHomeIconsNum(7)
+            R.id.maxIcons8 -> updateHomeIconsNum(8)
+
             R.id.textSize1 -> updateTextSizeScale(Constants.TextSize.ONE)
             R.id.textSize2 -> updateTextSizeScale(Constants.TextSize.TWO)
             R.id.textSize3 -> updateTextSizeScale(Constants.TextSize.THREE)
@@ -130,7 +167,19 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
             R.id.notifications -> updateSwipeDownAction(Constants.SwipeDownAction.NOTIFICATIONS)
             R.id.search -> updateSwipeDownAction(Constants.SwipeDownAction.SEARCH)
 
-            R.id.aboutOlauncher -> {
+            R.id.icon1 -> updateHomeIcons(1)
+            R.id.icon2 -> updateHomeIcons(2)
+            R.id.icon3 -> updateHomeIcons(3)
+            R.id.icon4 -> updateHomeIcons(4)
+            R.id.icon5 -> updateHomeIcons(5)
+            R.id.icon6 -> updateHomeIcons(6)
+            R.id.icon7 -> updateHomeIcons(7)
+            R.id.icon8 -> updateHomeIcons(8)
+
+            R.id.font -> updateFont(false)
+            R.id.clockFont -> updateFont(true)
+
+            R.id.about -> {
                 prefs.aboutClicked = true
                 requireContext().openUrl(Constants.URL_ABOUT_OLAUNCHER)
             }
@@ -141,10 +190,14 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
                 requireActivity().rateApp()
             }
 
+<<<<<<< HEAD
             R.id.twitter -> requireContext().openUrl(Constants.URL_TWITTER_TANUJ)
             R.id.github -> requireContext().openUrl(Constants.URL_OLAUNCHER_GITHUB)
+=======
+            R.id.twitter -> requireContext().openUrl(Constants.URL_GITHUB_UDAY)
+>>>>>>> Dev
             R.id.privacy -> requireContext().openUrl(Constants.URL_OLAUNCHER_PRIVACY)
-            R.id.footer -> requireContext().openUrl(Constants.URL_PLAY_STORE_DEV)
+            R.id.footer -> requireContext().openUrl(Constants.URL_BMAC)
         }
     }
 
@@ -177,11 +230,12 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
         binding.autoShowKeyboard.setOnClickListener(this)
         binding.toggleLock.setOnClickListener(this)
         binding.homeAppsNum.setOnClickListener(this)
+        binding.homeIconsNum.setOnClickListener(this)
         binding.dailyWallpaperUrl.setOnClickListener(this)
         binding.dailyWallpaper.setOnClickListener(this)
         binding.alignment.setOnClickListener(this)
         binding.alignmentLeft.setOnClickListener(this)
-        binding.alignmentCenter.setOnClickListener(this)
+        //binding.alignmentCenter.setOnClickListener(this)
         binding.alignmentRight.setOnClickListener(this)
         binding.alignmentBottom.setOnClickListener(this)
         binding.statusBar.setOnClickListener(this)
@@ -220,6 +274,16 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
         binding.maxApps7.setOnClickListener(this)
         binding.maxApps8.setOnClickListener(this)
 
+        binding.maxIcons0.setOnClickListener(this)
+        binding.maxIcons1.setOnClickListener(this)
+        binding.maxIcons2.setOnClickListener(this)
+        binding.maxIcons3.setOnClickListener(this)
+        binding.maxIcons4.setOnClickListener(this)
+        binding.maxIcons5.setOnClickListener(this)
+        binding.maxIcons6.setOnClickListener(this)
+        binding.maxIcons7.setOnClickListener(this)
+        binding.maxIcons8.setOnClickListener(this)
+
         binding.textSize1.setOnClickListener(this)
         binding.textSize2.setOnClickListener(this)
         binding.textSize3.setOnClickListener(this)
@@ -228,12 +292,24 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
         binding.textSize6.setOnClickListener(this)
         binding.textSize7.setOnClickListener(this)
 
+        binding.font.setOnClickListener(this)
+        binding.clockFont.setOnClickListener(this)
+
         binding.dailyWallpaper.setOnLongClickListener(this)
         binding.alignment.setOnLongClickListener(this)
         binding.appThemeText.setOnLongClickListener(this)
         binding.swipeLeftApp.setOnLongClickListener(this)
         binding.swipeRightApp.setOnLongClickListener(this)
         binding.toggleLock.setOnLongClickListener(this)
+
+        binding.icon1.setOnClickListener(this)
+        binding.icon2.setOnClickListener(this)
+        binding.icon3.setOnClickListener(this)
+        binding.icon4.setOnClickListener(this)
+        binding.icon5.setOnClickListener(this)
+        binding.icon6.setOnClickListener(this)
+        binding.icon7.setOnClickListener(this)
+        binding.icon8.setOnClickListener(this)
     }
 
     private fun initObservers() {
@@ -430,6 +506,59 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
         binding.appsNumSelectLayout.visibility = View.GONE
         prefs.homeAppsNum = num
         viewModel.refreshHome(true)
+    }
+
+    private fun updateHomeIconsNum(num: Int) {
+        binding.homeIconsNum.text = num.toString()
+        binding.iconsNumSelectLayout.visibility = View.GONE
+        prefs.homeIconsNum = num
+        viewModel.refreshHome(true)
+    }
+
+    private fun updateHomeIcons(num: Int) {
+        viewModel.iconNum.value = num
+        findNavController().navigate(R.id.action_settingsFragment_to_iconDrawerFragment)
+        populateIcons()
+    }
+
+    private fun updateFont(isClockFont: Boolean) {
+        viewModel.flagIsClockFont.value = isClockFont
+        findNavController().navigate(R.id.action_settingsFragment_to_fontSelectFragment)
+    }
+
+    private fun setFonts() {
+        binding.clockFont.typeface = returnTypeface(prefs.fontClockName, requireContext())
+        binding.font.typeface = returnTypeface(prefs.fontName, requireContext())
+
+        binding.clockFont.text = prefs.fontClockName
+        binding.font.text = prefs.fontName
+
+    }
+
+    private fun populateIcons() {
+        binding.icon1.setImageDrawable(returnDrawable(prefs.iconName1))
+        binding.icon2.setImageDrawable(returnDrawable(prefs.iconName2))
+        binding.icon3.setImageDrawable(returnDrawable(prefs.iconName3))
+        binding.icon4.setImageDrawable(returnDrawable(prefs.iconName4))
+        binding.icon5.setImageDrawable(returnDrawable(prefs.iconName5))
+        binding.icon6.setImageDrawable(returnDrawable(prefs.iconName6))
+        binding.icon7.setImageDrawable(returnDrawable(prefs.iconName7))
+        binding.icon8.setImageDrawable(returnDrawable(prefs.iconName8))
+    }
+
+    private fun returnDrawable(iconName: String): Drawable? {
+        return when (iconName) {
+            Constants.IC_CAMERA -> ContextCompat.getDrawable(requireContext(), R.drawable.ic_camera)
+            Constants.IC_CIRCLE -> ContextCompat.getDrawable(requireContext(), R.drawable.ic_circle)
+            Constants.IC_GALLERY -> ContextCompat.getDrawable(requireContext(), R.drawable.ic_gallery)
+            Constants.IC_MAIL -> ContextCompat.getDrawable(requireContext(), R.drawable.ic_mail)
+            Constants.IC_MESSAGE -> ContextCompat.getDrawable(requireContext(), R.drawable.ic_message)
+            Constants.IC_MUSIC -> ContextCompat.getDrawable(requireContext(), R.drawable.ic_music)
+            Constants.IC_PHONE -> ContextCompat.getDrawable(requireContext(), R.drawable.ic_phone)
+            Constants.IC_SEARCH -> ContextCompat.getDrawable(requireContext(), R.drawable.ic_search)
+            Constants.IC_WEB -> ContextCompat.getDrawable(requireContext(), R.drawable.ic_web)
+            else -> ContextCompat.getDrawable(requireContext(), R.drawable.ic_web)
+        }
     }
 
     private fun updateTextSizeScale(sizeScale: Float) {

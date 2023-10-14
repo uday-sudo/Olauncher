@@ -53,6 +53,32 @@
             app:exitAnim="@anim/fade_exit"
             app:popEnterAnim="@anim/fade_enter"
             app:popExitAnim="@anim/fade_exit" />
+        <action
+            android:id="@+id/action_settingsFragment_to_iconDrawerFragment"
+            app:destination="@id/iconDrawerFragment"
+            app:enterAnim="@anim/fade_enter"
+            app:exitAnim="@anim/fade_exit"
+            app:popEnterAnim="@anim/fade_enter"
+            app:popExitAnim="@anim/fade_exit" />
+        <action
+            android:id="@+id/action_settingsFragment_to_fontSelectFragment"
+            app:destination="@id/fontSelectFragment"
+            app:enterAnim="@anim/fade_enter"
+            app:exitAnim="@anim/fade_exit"
+            app:popEnterAnim="@anim/fade_enter"
+            app:popExitAnim="@anim/fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/iconDrawerFragment"
+        android:name="app.olauncher.ui.IconDrawerFragment"
+        android:label="IconDrawerFragment"
+        android:layout="@layout/fragment_icon_drawer">
+    </fragment>
+    <fragment
+        android:id="@+id/fontSelectFragment"
+        android:name="app.olauncher.ui.FontSelectFragment"
+        android:label="FontSelectFragment"
+        android:layout="@layout/fragment_font_select">
     </fragment>
 
 </navigation>

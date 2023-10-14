@@ -7,4 +7,5 @@
 
     <dimen name="time_size">64sp</dimen>
     <dimen name="date_size">18sp</dimen>
+    <dimen name="img_large">65sp</dimen>
 </resources>

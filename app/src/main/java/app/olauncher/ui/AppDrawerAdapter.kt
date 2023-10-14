@@ -1,5 +1,6 @@
 package app.olauncher.ui
 
+import android.graphics.Typeface
 import android.os.UserHandle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,13 +15,17 @@ import androidx.recyclerview.widget.RecyclerView
 import app.olauncher.R
 import app.olauncher.data.AppModel
 import app.olauncher.data.Constants
+import app.olauncher.data.Prefs
 import app.olauncher.databinding.AdapterAppDrawerBinding
 import app.olauncher.helper.hideKeyboard
 import app.olauncher.helper.isSystemApp
+import app.olauncher.helper.returnTypeface
 import app.olauncher.helper.showKeyboard
 import java.text.Normalizer
 
 class AppDrawerAdapter(
+
+    private var font: Typeface,
     private var flag: Int,
     private val appLabelGravity: Int,
     private val appClickListener: (AppModel) -> Unit,
@@ -56,6 +61,7 @@ class AppDrawerAdapter(
             if (appFilteredList.size == 0 || position == RecyclerView.NO_POSITION) return
             val appModel = appFilteredList[holder.bindingAdapterPosition]
             holder.bind(
+                font,
                 flag,
                 appLabelGravity,
                 myUserHandle,
@@ -136,6 +142,7 @@ class AppDrawerAdapter(
     class ViewHolder(private val binding: AdapterAppDrawerBinding) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(
+            font: Typeface,
             flag: Int,
             appLabelGravity: Int,
             myUserHandle: UserHandle,
@@ -150,6 +157,7 @@ class AppDrawerAdapter(
                 appHideLayout.visibility = View.GONE
                 renameLayout.visibility = View.GONE
                 appTitle.text = appModel.appLabel
+                appTitle.typeface = font
                 appTitle.gravity = appLabelGravity
                 otherProfileIndicator.isVisible = appModel.user != myUserHandle
 
