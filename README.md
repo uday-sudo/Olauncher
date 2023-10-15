@@ -1,8 +1,8 @@
 ![Plauncher](https://repository-images.githubusercontent.com/278638069/db0acb80-661b-11eb-803e-926cae5dccb4)
 
 
-# Olauncher | Minimal AF
-Olauncher is a minimal AF launcher app for Android with daily new wallpaper. AF stands for ad-free. :)
+# Plauncher | Minimal AF
+Plauncher is a minimal AF launcher app for Android with daily new wallpaper. AF stands for ad-free. :)
 
 ## Install
 
