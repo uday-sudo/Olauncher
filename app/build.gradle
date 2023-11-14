@@ -14,7 +14,7 @@ android {
 
 
     defaultConfig {
-        applicationId "app.olauncher"
+        applicationId "app.plauncher"
         minSdkVersion 23
         targetSdkVersion 33
         versionCode 1

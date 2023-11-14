@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="app.olauncher.ui.HomeFragment"
+        android:name="app.plauncher.ui.HomeFragment"
         android:label="main_fragment"
         tools:layout="@layout/fragment_home">
         <action
@@ -28,7 +28,7 @@
 
     <fragment
         android:id="@+id/appListFragment"
-        android:name="app.olauncher.ui.AppDrawerFragment"
+        android:name="app.plauncher.ui.AppDrawerFragment"
         android:label="app_list_fragment"
         tools:layout="@layout/fragment_app_drawer">
         <action
@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="app.olauncher.ui.SettingsFragment"
+        android:name="app.plauncher.ui.SettingsFragment"
         android:label="SettingsFragment"
         android:layout="@layout/fragment_settings">
         <action
@@ -70,13 +70,13 @@
     </fragment>
     <fragment
         android:id="@+id/iconDrawerFragment"
-        android:name="app.olauncher.ui.IconDrawerFragment"
+        android:name="app.plauncher.ui.IconDrawerFragment"
         android:label="IconDrawerFragment"
         android:layout="@layout/fragment_icon_drawer">
     </fragment>
     <fragment
         android:id="@+id/fontSelectFragment"
-        android:name="app.olauncher.ui.FontSelectFragment"
+        android:name="app.plauncher.ui.FontSelectFragment"
         android:label="FontSelectFragment"
         android:layout="@layout/fragment_font_select">
     </fragment>
